@@ -1,6 +1,6 @@
 ## Data Visualization
 
-A blog of charts, maps, infographs, and other visualizations
+> A blog of charts, maps, infographs, and other visualizations
 
 ### Markdown
 
