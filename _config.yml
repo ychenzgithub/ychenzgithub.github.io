@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
 description: A blog of charts, maps, infographs, and other visualizations
 title: Data Visualization
-type: post
+layout: post
+author: Yang Chen
+comments: true
