@@ -1,8 +1,8 @@
-## Data Visualization
-> A blog of charts, maps, infographs, and other visualizations
+# Data Visualization
+<h6> A blog of charts, maps, infographs, and other visualizations </h6>
+---
 
-
-### Time-lapse of all the wind in 2018
+## Time-lapse of all the wind in 2018
 
 **Jan 11, 2019**
 
