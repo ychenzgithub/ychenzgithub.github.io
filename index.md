@@ -1,4 +1,3 @@
-## Data Visualization
 
 > A blog of charts, maps, infographs, and other visualizations
 
