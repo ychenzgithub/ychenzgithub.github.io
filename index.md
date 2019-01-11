@@ -1,11 +1,11 @@
 
 
-### Altair 入门教程
+### Altair
 **Jan 11, 2019**  
 Altair is a declarative statistical visualization library for Python.  
 [![img](https://embedwistia-a.akamaihd.net/deliveries/25a8ddb65349f1dcb8423a919074eeceffb77810.jpg)](https://github.com/altair-viz/altair)
 
-
+---
 
 ### Time-lapse of all the wind in 2018
 **Jan 11, 2019**  
