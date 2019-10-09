@@ -1,7 +1,7 @@
 ### The globe of economic complexity
 **Oct 09, 2019**
 The globe of economic complexity dynamically maps out the entire world production of goods to create an economic landscape of countries around the globe.  
-[![img](http://globe.cid.harvard.edu/images/preview.png)](http://globe.cid.harvard.edu/)
+[![img](http://4.bp.blogspot.com/-wCH4DD1FMRo/VdwnwpLNuWI/AAAAAAAAsU8/YTorxonb6kY/s523/logo.gif)](http://globe.cid.harvard.edu/)
 
 ---
 
