@@ -3,6 +3,7 @@
 The globe of economic complexity dynamically maps out the entire world production of goods to create an economic landscape of countries around the globe.  
 [![img](http://4.bp.blogspot.com/-wCH4DD1FMRo/VdwnwpLNuWI/AAAAAAAAsU8/YTorxonb6kY/s523/logo.gif)](http://globe.cid.harvard.edu/)
 
+[<img width="800" alt="portfolio_view" src="http://4.bp.blogspot.com/-wCH4DD1FMRo/VdwnwpLNuWI/AAAAAAAAsU8/YTorxonb6kY/s523/logo.gif">](http://globe.cid.harvard.edu/)
 ---
 
 ### A century of surface temperature anomalies
