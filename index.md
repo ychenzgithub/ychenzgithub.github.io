@@ -1,3 +1,10 @@
+### Windy  
+**Oct 09, 2019**
+Global visualization of wind, weather, and air quality variables.   
+[<img width="1000" src="https://www.windy.com/img/socialshare3.jpg">](https://www.windy.com/)
+
+---
+
 ### The globe of economic complexity  
 **Oct 09, 2019**
 The globe of economic complexity dynamically maps out the entire world production of goods to create an economic landscape of countries around the globe.   
