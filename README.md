@@ -1,10 +1,9 @@
-# Yang Chen (ychenzgithub) — Personal Homepage & Open Source Directory
+# ychenzgithub — Open Source Projects & Web Applications
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Website-2ea44f?style=for-the-badge&logo=github)](https://ychenzgithub.github.io/)
-[![UCI ESS](https://img.shields.io/badge/Academic%20Homepage-UC%20Irvine%20ESS-0064a4?style=for-the-badge)](https://www.ess.uci.edu/~ychen17/)
 [![Public Repositories](https://img.shields.io/badge/Public%20Repositories-15-blue?style=for-the-badge)](https://github.com/ychenzgithub?tab=repositories)
 
-> Welcome to **[ychenzgithub.github.io](https://ychenzgithub.github.io/)**, the personal portal and open-source directory of **Yang Chen** (Associate Researcher, Department of Earth System Science, University of California, Irvine).
+> Welcome to **[ychenzgithub.github.io](https://ychenzgithub.github.io/)**, the open-source repository directory and project showcase for **ychenzgithub**.
 
 ---
 
@@ -42,17 +41,3 @@
 ## 🧮 Mathematics & Algorithms (数学与算法)
 
 - **[100PrisonersProblem](https://github.com/ychenzgithub/100PrisonersProblem)**: 经典“100名囚徒概率难题”的 Python 蒙特卡洛模拟与置换环（Cycle Strategy）数学解析，解析为何该策略能将整体生还概率提升至 31.18%。
-
----
-
-## 👨‍🔬 About the Author
-
-- **Yang Chen (陈洋)**
-- Associate Researcher, Department of Earth System Science, University of California, Irvine
-- Research focus: Wildfire remote sensing, satellite observations, climate-fire interactions, carbon/aerosol emissions, geospatial big data.
-- Core contributor to:
-  - [Global Fire Emissions Database (GFED)](https://www.globalfiredata.org/)
-  - [Fire Events Data Suite (FEDS)](https://www.ess.uci.edu/~uci-nasa-firetracking/)
-  - [South American Fire Season Forecast (SAMFSS)](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS.html)
-- Academic Webpage: [https://www.ess.uci.edu/~ychen17/](https://www.ess.uci.edu/~ychen17/)
-- Email: [yang.chen@uci.edu](mailto:yang.chen@uci.edu)

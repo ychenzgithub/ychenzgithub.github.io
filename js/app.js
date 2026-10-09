@@ -1,5 +1,5 @@
 /**
- * Application logic for Yang Chen's GitHub homepage.
+ * Application logic for ychenzgithub's GitHub repository portal.
  * Handles theme toggling, language switching, search, category filtering, and sorting.
  */
 
@@ -266,29 +266,29 @@
   // Translation Dictionary
   const I18N_TEXTS = {
     nav_featured: { zh: "精选应用", en: "Featured Apps" },
-    nav_science: { zh: "科学研究", en: "Earth Science" },
+    nav_science: { zh: "科学计算", en: "Scientific Tools" },
     nav_repos: { zh: "所有项目", en: "Repositories" },
-    nav_about: { zh: "关于作者", en: "About" },
-    hero_pill: { zh: "加州大学尔湾分校 · 地球系统科学", en: "UC Irvine · Earth System Science" },
-    hero_title_name: { zh: "陈洋", en: "Yang Chen" },
-    hero_title_sub: { zh: "地球科学与计算探索", en: "Earth Science & Computational Tools" },
-    hero_affiliation: { zh: "加州大学尔湾分校 (UCI) 地球系统科学系 · 副研究员", en: "Associate Researcher · Dept of Earth System Science, UC Irvine" },
-    hero_desc: { zh: "专注于全球野火遥感监测、气候与火灾相互作用、碳排放反演以及次季节-年际气候预测。活跃于开源地球科学计算、微距交互式数字地图与实用算法开发。", en: "Researching global wildfire remote sensing, climate-fire interactions, carbon emissions, and climate prediction. Developing open-source scientific tools, high-res web cartography, and interactive applications." },
-    btn_explore: { zh: "浏览开源项目", en: "Explore Projects" },
-    btn_academic: { zh: "UCI 学术主页", en: "Academic Page" },
+    nav_about: { zh: "关于项目", en: "About Hub" },
+    hero_pill: { zh: "开源项目合集 · 地球科学与计算应用", en: "Open Source Hub · Geospatial & Web Tools" },
+    hero_title_name: { zh: "项目主页", en: "Project Hub" },
+    hero_title_sub: { zh: "地球科学计算、Web 交互应用与精选知识库", en: "Scientific Computing, Web Apps & Curated Guides" },
+    hero_affiliation: { zh: "GitHub 开源仓库导航与在线应用集合", en: "Open-source repositories & interactive web applications" },
+    hero_desc: { zh: "汇集野火遥感监测、气候指数分析、微距古地图交互赏析、GeoGuessr 知识宝典及实用算法工具，全部代码与资源均托管于 GitHub 开源生态。", en: "A curated collection of wildfire satellite tools, climate indices analysis, deep-zoom historical cartography, GeoGuessr meta guides, and algorithms." },
+    btn_explore: { zh: "浏览全部项目", en: "Explore Projects" },
+    btn_live_apps: { zh: "在线交互体验", en: "Live Web Apps" },
     stat_repos: { zh: "公开开源仓库", en: "Public Repositories" },
     stat_apps: { zh: "在线交互应用", en: "Live Web Apps" },
-    stat_gfed: { zh: "全球野火核心算法", en: "GFED & FEDS Systems" },
-    stat_years: { zh: "开源探索历程", en: "Years on GitHub" },
+    stat_open: { zh: "开源开放代码", en: "Open Source Code" },
+    stat_years: { zh: "持续探索历程", en: "Years on GitHub" },
     feat_tag: { zh: "Interactive Applications", en: "Interactive Applications" },
     feat_title: { zh: "精选在线交互应用", en: "Featured Web Applications" },
     feat_desc: { zh: "基于现代 Web 技术构建的在线平台，涵盖古地图微距赏析、GeoGuessr 速查、区域美食导览与密码学交互训练。", en: "Interactive platforms built with modern web tech, covering deep-zoom cartography, GeoGuessr meta tools, food discovery, and cipher education." },
     sci_tag: { zh: "Scientific Computing", en: "Scientific Computing" },
-    sci_title: { zh: "野火遥感与气候科学研究", en: "Earth & Wildfire Science" },
-    sci_desc: { zh: "立足加州大学尔湾分校野火与气候团队，结合卫星遥感、气候动力学与空间算法，提供公开学术工具与代码库。", en: "Scientific computational toolkits and data pipelines for satellite fire monitoring, climate dynamics, and spatial simulation benchmark." },
+    sci_title: { zh: "野火遥感与气候科学计算", en: "Earth & Wildfire Science" },
+    sci_desc: { zh: "结合卫星遥感、气候动力学与空间算法，提供公开开源的地球科学计算工具与数据处理管线。", en: "Open-source computational toolkits and data pipelines for satellite fire monitoring, climate dynamics, and spatial benchmark metrics." },
     all_tag: { zh: "Project Library", en: "Project Library" },
     all_title: { zh: "全部公开项目库 (15)", en: "All Public Repositories (15)" },
-    all_desc: { zh: "支持按分类筛选、关键词即时搜索与多维度排序，探索全部科研与业余开源项目。", en: "Explore all scientific packages, interactive web tools, curated knowledge bases, and algorithms." },
+    all_desc: { zh: "支持按分类筛选、关键词即时搜索与多维度排序，探索全部科研与开源工具。", en: "Explore all scientific packages, interactive web tools, curated knowledge bases, and algorithms." },
     tab_all: { zh: "全部项目 (15)", en: "All Projects (15)" },
     tab_webapps: { zh: "🚀 在线应用 (5)", en: "🚀 Web Apps (5)" },
     tab_science: { zh: "🌍 地球与野火 (5)", en: "🌍 Earth Science (5)" },
@@ -298,16 +298,16 @@
     sort_featured: { zh: "精选推荐优先", en: "Featured First" },
     sort_stars: { zh: "Star 数量排序", en: "Most Stars" },
     sort_name: { zh: "名称字母排序", en: "Name (A-Z)" },
-    about_tag: { zh: "About & Background", en: "About & Background" },
-    about_title: { zh: "关于作者与研究工作", en: "About Yang Chen & Research" },
-    about_p1: { zh: "我是加州大学尔湾分校 (University of California, Irvine) 地球系统科学系的科研人员。研究方向跨越大气、海洋与陆地生态系统，重点研究全球野火特征提取、气候对火灾的调控机制、火灾排放对空气质量的影响。", en: "I am a researcher at the Department of Earth System Science, University of California, Irvine. My research spans atmospheric, ocean, and terrestrial systems, with a particular focus on satellite wildfire characterization, climate-fire relationships, and air quality impacts." },
-    about_p2: { zh: "作为全球火灾排放数据库 (GFED) 和卫星火灾跟踪数据系统 (FEDS) 的主要开发者之一，致力于将高时空分辨率遥感数据转化为可靠的科研数据。同时建立了南美火灾季节预测 (SAMFSS) 等平台。", en: "As a contributor to the Global Fire Emissions Database (GFED) and the Fire Events Data Suite (FEDS), I work on translating high-resolution satellite remote sensing into actionable climate data, including the South American Fire Season Forecast (SAMFSS)." },
-    about_card1_title: { zh: "全球火灾排放数据库 (GFED)", en: "Global Fire Emissions Database (GFED)" },
-    about_card1_desc: { zh: "国际广泛采用的全球火灾排放基准数据集，提供 0.25° 网格高精度过火面积与痕量气体排放数据。", en: "Widely used global fire emissions benchmark dataset providing 0.25-degree resolution burned area and trace gas emissions." },
-    about_card2_title: { zh: "火灾事件追踪套件 (FEDS)", en: "Fire Events Data Suite (FEDS)" },
-    about_card2_desc: { zh: "基于 VIIRS 卫星高频观测的单个火灾事件全生命周期时空演化追踪算法与数据库。", en: "Satellite-based tracking algorithm and dataset capturing the full lifecycle, perimeter, and spread of individual wildfires." },
-    about_card3_title: { zh: "跨学科计算与数字人文", en: "Interdisciplinary Web & Humanities" },
-    about_card3_desc: { zh: "热衷于将地理信息、微距制图、密码学及实用算法转化为直观优雅的 Web 交互体验。", en: "Passionate about translating geospatial data, deep-zoom cartography, and discrete algorithms into clean, responsive web experiences." }
+    about_tag: { zh: "About This Hub", en: "About This Hub" },
+    about_title: { zh: "关于项目库与技术方向", en: "About the Repositories & Tech Stack" },
+    about_p1: { zh: "本站收录了由 ychenzgithub 维护的全部公开开源仓库，涵盖卫星遥感计算、气候指数分析、高分辨率数字地图交互、实用科普与算法探索。", en: "This hub collects all public open-source repositories maintained under ychenzgithub, spanning satellite remote sensing, climate indices, high-res web cartography, and discrete algorithms." },
+    about_p2: { zh: "所有在线应用均部署于 GitHub Pages 或云端平台，代码与数据完全公开透明，欢迎自由探索与交流学习。", en: "All interactive web apps are hosted on GitHub Pages or cloud platforms with completely open-source code and data." },
+    about_card1_title: { zh: "全球火灾排放与遥感", en: "Fire Emissions & Remote Sensing" },
+    about_card1_desc: { zh: "近实时全球过火面积、火灾排放估算管线及蔓延模拟空间度量基准算法。", en: "Near real-time burned area, emissions estimation pipelines, and spread simulation benchmark metrics." },
+    about_card2_title: { zh: "气候指数与动力学分析", en: "Climate Indices & Dynamics" },
+    about_card2_desc: { zh: "次季节至年际气候指数（ENSO ONI、MJO RMM）自动化数据获取与可视化分析。", en: "Automated acquisition and publication visualization of subseasonal-to-interannual climate indices." },
+    about_card3_title: { zh: "交互式地图与工具", en: "Interactive Maps & Web Tools" },
+    about_card3_desc: { zh: "高分辨率微距古地图探索、GeoGuessr 速查宝典、美食地图及密码学训练平台。", en: "Deep-zoom historical cartography, GeoGuessr meta hub, discovery maps, and cryptography tools." }
   };
 
   // Launch on DOM ready

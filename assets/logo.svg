@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="10" y="10" width="180" height="180" rx="46" fill="url(#bgGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Orbital Rings (Earth / Cosmos theme) -->
+  <circle cx="100" cy="100" r="62" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-dasharray="10 6" opacity="0.45" />
+  <circle cx="100" cy="100" r="50" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" opacity="0.3" />
+  
+  <!-- Latitude / Longitude Curves -->
+  <ellipse cx="100" cy="100" rx="46" ry="18" fill="none" stroke="url(#ringGrad)" stroke-width="2" opacity="0.6" transform="rotate(-25 100 100)" />
+  <ellipse cx="100" cy="100" rx="18" ry="46" fill="none" stroke="url(#ringGrad)" stroke-width="2" opacity="0.6" transform="rotate(-25 100 100)" />
+  
+  <!-- Central Emblem: Stylized Code & Spark -->
+  <g transform="translate(100, 100) scale(1.15)">
+    <!-- Terminal / Node Core -->
+    <circle cx="0" cy="0" r="14" fill="#10b981" filter="url(#glow)" opacity="0.9" />
+    <circle cx="0" cy="0" r="7" fill="#ffffff" />
+    
+    <!-- Code Brackets -->
+    <path d="M -26 -12 L -36 0 L -26 12" fill="none" stroke="#34d399" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 26 -12 L 36 0 L 26 12" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Glowing Accent Dots -->
+  <circle cx="65" cy="50" r="3.5" fill="#34d399" opacity="0.8"/>
+  <circle cx="140" cy="145" r="4.5" fill="#38bdf8" opacity="0.8"/>
+  <circle cx="150" cy="65" r="3" fill="#f59e0b" opacity="0.75"/>
+</svg>

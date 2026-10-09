@@ -1,5 +1,5 @@
 /**
- * Repository and profile dataset for Yang Chen's GitHub homepage.
+ * Repository dataset for ychenzgithub's GitHub repository portal.
  * Contains detailed bilingual metadata for all public repositories.
  */
 
@@ -347,7 +347,7 @@ const REPOSITORIES_DATA = [
     },
     desc: {
       zh: "原创总结的中文魔方教程，详解三阶魔方基础层先法 (LBL)、CFOP 快速法核心公式、二阶魔方以及四阶魔方降维法，图文并茂、公式清晰实用。",
-      en: "Comprehensive, self-authored Chinese tutorial covering 2x2, 3x3 (layer-by-layer LBL method and CFOP foundation), and 4x4 reduction method with clear diagrams."
+      en: "Comprehensive Chinese tutorial covering 2x2, 3x3 (layer-by-layer LBL method and CFOP foundation), and 4x4 reduction method with clear diagrams."
     },
     category: "knowledge",
     categoryLabel: {
@@ -396,11 +396,11 @@ const REPOSITORIES_DATA = [
     id: "ychenzgithub.github.io",
     name: "ychenzgithub.github.io",
     title: {
-      zh: "Yang Chen 个人主页与开源项目门户",
-      en: "Yang Chen Portfolio & Portal Source"
+      zh: "ychenzgithub 个人主页与开源项目门户",
+      en: "ychenzgithub Project Hub & Portal"
     },
     desc: {
-      zh: "本个人主页项目源码：集中展示加州大学尔湾分校科研成果、野火与气候开源工具、交互式 Web 地图与精选知识库，支持实时过滤与多语言切换。",
+      zh: "本开源主页项目源码：集中展示野火与气候开源工具、交互式 Web 地图与精选知识库，支持实时过滤与多语言切换。",
       en: "Central portfolio and directory of open-source projects, research tools, interactive web applications, and curated knowledge repositories with search & filters."
     },
     category: "meta",
