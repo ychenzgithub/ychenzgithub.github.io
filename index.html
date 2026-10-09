@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Yang Chen | Earth Scientist & Open Source Portfolio</title>
+  <meta name="description" content="Personal portfolio and open-source project directory of Yang Chen (Associate Researcher at UC Irvine). Wildfire remote sensing, climate dynamics, interactive web mapping, and educational tools.">
+  <meta name="keywords" content="Yang Chen, UC Irvine, Earth Science, Wildfire, GFED, Remote Sensing, Climate, GeoGuessr, Cartography, Open Source">
+  <meta name="author" content="Yang Chen">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yang Chen | Earth Scientist & Open Source Portfolio">
+  <meta property="og:description" content="Explore open-source scientific tools, interactive web applications, and research by Yang Chen at UC Irvine.">
+  <meta property="og:image" content="https://ychenzgithub.github.io/assets/avatar.jpg">
+  <meta property="og:url" content="https://ychenzgithub.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand">
+        <img src="assets/avatar.jpg" alt="Yang Chen Avatar" class="brand-avatar" onerror="this.src='https://avatars.githubusercontent.com/u/14828101?v=4'">
+        <div class="brand-text">
+          <span class="brand-name">Yang Chen</span>
+          <span class="brand-title">ychenzgithub</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#featured" class="nav-link" data-i18n="nav_featured">精选应用</a></li>
+          <li><a href="#science" class="nav-link" data-i18n="nav_science">科学研究</a></li>
+          <li><a href="#repos" class="nav-link" data-i18n="nav_repos">所有项目</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">关于作者</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button id="lang-toggle" class="btn-icon btn-lang" title="Switch Language">
+          <i class="fa-solid fa-language"></i>
+          <span class="lang-text">EN</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button id="theme-toggle" class="btn-icon" title="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <!-- GitHub Profile -->
+        <a href="https://github.com/ychenzgithub" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <!-- Mobile Nav Toggle -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" title="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <div class="hero-pill">
+              <span class="pulse-dot"></span>
+              <span data-i18n="hero_pill">加州大学尔湾分校 · 地球系统科学</span>
+            </div>
+            
+            <h1 class="hero-title">
+              <span data-i18n="hero_title_name">陈洋</span>
+              <span class="gradient-text">Yang Chen</span>
+            </h1>
+
+            <div class="hero-subtitle" data-i18n="hero_title_sub">
+              地球科学与计算探索 · Earth Science & Computational Tools
+            </div>
+
+            <div class="hero-affiliation">
+              <i class="fa-solid fa-building-columns"></i>
+              <span data-i18n="hero_affiliation">加州大学尔湾分校 (UCI) 地球系统科学系 · 副研究员</span>
+            </div>
+
+            <p class="hero-desc" data-i18n="hero_desc">
+              专注于全球野火遥感监测、气候与火灾相互作用、碳排放反演以及次季节-年际气候预测。活跃于开源地球科学计算、微距交互式数字地图与实用算法开发。
+            </p>
+
+            <div class="hero-actions">
+              <a href="#repos" class="btn btn-primary">
+                <i class="fa-solid fa-compass"></i>
+                <span data-i18n="btn_explore">浏览开源项目</span>
+              </a>
+              <a href="https://www.ess.uci.edu/~ychen17/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span data-i18n="btn_academic">UCI 学术主页</span>
+              </a>
+              <a href="mailto:yang.chen@uci.edu" class="btn btn-secondary">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-avatar-card">
+            <div class="avatar-wrapper">
+              <img src="assets/avatar.jpg" alt="Yang Chen" class="hero-avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/14828101?v=4'">
+              <div class="avatar-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>UCI ESS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-icon emerald">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div>
+              <div class="stat-num">15</div>
+              <div class="stat-label" data-i18n="stat_repos">公开开源仓库</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon cyan">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div>
+              <div class="stat-num">5</div>
+              <div class="stat-label" data-i18n="stat_apps">在线交互应用</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon blue">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div>
+              <div class="stat-num">GFED</div>
+              <div class="stat-label" data-i18n="stat_gfed">全球野火核心算法</div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon amber">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div>
+              <div class="stat-num">10+</div>
+              <div class="stat-label" data-i18n="stat_years">开源探索历程</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Live Web Apps Section -->
+    <section id="featured" class="featured-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="feat_tag">Interactive Applications</div>
+          <h2 class="section-title" data-i18n="feat_title">精选在线交互应用</h2>
+          <p class="section-desc" data-i18n="feat_desc">基于现代 Web 技术构建的在线平台，涵盖古地图微距赏析、GeoGuessr 速查、区域美食导览与密码学交互训练。</p>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Card 1: MapAppreciation -->
+          <div class="featured-card large">
+            <div class="card-media">
+              <img src="assets/map_appreciation.jpg" alt="Map Appreciation Preview">
+              <div class="media-badge">
+                <i class="fa-solid fa-circle fa-2xs" style="color: var(--accent-emerald);"></i>
+                <span>Live Online</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-pill">Deep Zoom</span>
+                <span class="tag-pill">OpenSeadragon</span>
+                <span class="tag-pill">Cartography</span>
+                <span class="tag-pill">Digital Humanities</span>
+              </div>
+              <h3 class="card-title">古地图超清微距交互赏析平台</h3>
+              <p class="card-desc">
+                历史地图超高清微距交互探索平台。支持利玛窦《坤舆万国全图》(1602) 与卫匡国《中国新图志》(1655) 毫米级高分辨率金字塔瓦片缩放与历史图层解析，带来极致细腻的沉浸式赏析体验。
+              </p>
+              <div class="card-actions">
+                <a href="https://ychenzgithub.github.io/MapAppreciation/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>进入赏析平台</span>
+                </a>
+                <a href="https://github.com/ychenzgithub/MapAppreciation" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>源码</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: GeoGuessr-Hub -->
+          <div class="featured-card large">
+            <div class="card-media">
+              <div class="media-placeholder geo">
+                <i class="fa-solid fa-earth-americas"></i>
+                <div style="font-weight: 600; font-size: 1.1rem; color: var(--text-main);">GeoGuessr Master Hub</div>
+              </div>
+              <div class="media-badge">
+                <i class="fa-solid fa-circle fa-2xs" style="color: var(--accent-emerald);"></i>
+                <span>Live Online</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-pill">Interactive Atlas</span>
+                <span class="tag-pill">Street View Meta</span>
+                <span class="tag-pill">Regional Guides</span>
+                <span class="tag-pill">Bollards & Poles</span>
+              </div>
+              <h3 class="card-title">GeoGuessr 知识宝典与速查工具</h3>
+              <p class="card-desc">
+                提炼自实战笔记的全球 GeoGuessr Meta 识别指南与高效复习系统。涵盖全球街景相机代数、电线杆、路桩、车顶车身天线特征以及精细化交互式国家与地区图集，辅助竞技选手极速定点。
+              </p>
+              <div class="card-actions">
+                <a href="https://ychenzgithub.github.io/GeoGuessr-Hub/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>进入知识宝典</span>
+                </a>
+                <a href="https://github.com/ychenzgithub/GeoGuessr-Hub" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>源码</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: IrvineAsianFood -->
+          <div class="featured-card third">
+            <div class="card-media">
+              <div class="media-placeholder food">
+                <i class="fa-solid fa-bowl-food"></i>
+                <div style="font-weight: 600; font-size: 0.95rem; color: var(--text-main);">Irvine Asian Food</div>
+              </div>
+              <div class="media-badge">
+                <i class="fa-solid fa-circle fa-2xs" style="color: var(--accent-emerald);"></i>
+                <span>Live Online</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">Leaflet Map</span>
+                <span class="tag-pill">Orange County</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.15rem;">尔湾及周边亚洲美食地图</h3>
+              <p class="card-desc">
+                涵盖尔湾及橙县（Tustin, Costa Mesa 等）200+ 亚洲餐厅、奶茶甜品及超市的交互式美食地图，支持品类筛选与空间检索。
+              </p>
+              <div class="card-actions">
+                <a href="https://ychenzgithub.github.io/IrvineAsianFood/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>体验美食地图</span>
+                </a>
+                <a href="https://github.com/ychenzgithub/IrvineAsianFood" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: codebusters-training-center -->
+          <div class="featured-card third">
+            <div class="card-media">
+              <div class="media-placeholder crypto">
+                <i class="fa-solid fa-key"></i>
+                <div style="font-weight: 600; font-size: 0.95rem; color: var(--text-main);">Codebusters Center</div>
+              </div>
+              <div class="media-badge">
+                <i class="fa-solid fa-circle fa-2xs" style="color: var(--accent-emerald);"></i>
+                <span>Live Online</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-pill">Science Olympiad</span>
+                <span class="tag-pill">Cryptography</span>
+                <span class="tag-pill">Interactive Drills</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.15rem;">Codebusters 密码学训练中心</h3>
+              <p class="card-desc">
+                面向 Science Olympiad Codebusters (Division B 2026–27) 训练平台，涵盖全 13 种密码教程、无限习题生成器、限时竞速与模拟考。
+              </p>
+              <div class="card-actions">
+                <a href="https://ychenzgithub.github.io/codebusters-training-center/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>进入训练中心</span>
+                </a>
+                <a href="https://github.com/ychenzgithub/codebusters-training-center" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: OCI Streamlit -->
+          <div class="featured-card third">
+            <div class="card-media">
+              <div class="media-placeholder climate">
+                <i class="fa-solid fa-water"></i>
+                <div style="font-weight: 600; font-size: 0.95rem; color: var(--text-main);">OCI Climate App</div>
+              </div>
+              <div class="media-badge">
+                <i class="fa-solid fa-circle fa-2xs" style="color: var(--accent-cyan);"></i>
+                <span>Live Streamlit</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag-pill">Streamlit</span>
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">Ocean Climate</span>
+              </div>
+              <h3 class="card-title" style="font-size: 1.15rem;">海洋气候指数交互平台 (OCI)</h3>
+              <p class="card-desc">
+                自动化海洋气候指数跟踪与交互分析应用，提供厄尔尼诺关键指标 ONI (Oceanic Niño Index) 的动态时间序列与诊断。
+              </p>
+              <div class="card-actions">
+                <a href="https://share.streamlit.io/ychenzgithub/oci/ONI.py" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>打开 Streamlit 应用</span>
+                </a>
+                <a href="https://github.com/ychenzgithub/OCI" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Earth & Wildfire Science Spotlight -->
+    <section id="science" class="science-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="sci_tag">Scientific Computing</div>
+          <h2 class="section-title" data-i18n="sci_title">野火遥感与气候科学研究</h2>
+          <p class="section-desc" data-i18n="sci_desc">立足加州大学尔湾分校野火与气候团队，结合卫星遥感、气候动力学与空间算法，提供公开学术工具与代码库。</p>
+        </div>
+
+        <div class="science-grid">
+          <!-- Science Card 1: GFED5NRT -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-fire"></i></div>
+              <span class="science-badge">VIIRS 375m & GFED5</span>
+            </div>
+            <h3 class="science-title">GFED5NRT · 全球近实时火灾排放</h3>
+            <p class="science-desc">
+              基于 VIIRS 375m 高分辨率卫星主动火点观测，结合 GFED5 区域与植被类型衍生有效过火面积 (EFA) 和燃料消耗 (FC) 标量，在 0.25° 网格上自动化生成近实时全球过火面积与化学物种排放。
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> 每日自动化拉取 Suomi-NPP / NOAA-20 卫星火点</li>
+              <li><i class="fa-solid fa-check"></i> 严格的多物种化学排放因子 (EF) 矩阵转换</li>
+              <li><i class="fa-solid fa-check"></i> 支持端到端云端同步与全球时空制图</li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://github.com/ychenzgithub/GFED5NRT" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
+                <i class="fa-brands fa-github"></i>
+                <span>查看 GFED5NRT 仓库</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Science Card 2: FireSpreadIndices -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <span class="science-badge">GeoPandas & Rasterio</span>
+            </div>
+            <div class="science-image-box">
+              <img src="assets/fire_spread.png" alt="Fire Spread Schematic">
+            </div>
+            <h3 class="science-title">FireSpreadIndices · 蔓延模拟评估库</h3>
+            <p class="science-desc">
+              专业评估野火蔓延数值模拟与观测边界空间吻合度的 Python 基准库。涵盖整体吻合度 (IoU, Dice, SDI, ADI, SSIM) 及过预测/欠预测分解指标。
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> 矢量多边形与栅格二值/连续网格双通道计算</li>
+              <li><i class="fa-solid fa-check"></i> 完整的火灾蔓延形状偏差与面积偏差空间度量</li>
+              <li><i class="fa-solid fa-check"></i> 包含可重现的 Jupyter 测试工作流与可视化</li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://github.com/ychenzgithub/FireSpreadIndices" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
+                <i class="fa-brands fa-github"></i>
+                <span>查看 FireSpreadIndices 源码</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Science Card 3: ENSOMJOupdate -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+              <span class="science-badge">ENSO & MJO Dynamics</span>
+            </div>
+            <div class="science-image-box">
+              <img src="assets/enso_mjo.png" alt="ENSO MJO Phase Comparison">
+            </div>
+            <h3 class="science-title">ENSOMJOupdate · 重大厄尔尼诺分析</h3>
+            <p class="science-desc">
+              聚焦 2026 发展中厄尔尼诺事件与历史极端基准年 (1997, 2006, 2015) 的跨年度气候异常对比，分析次季节 MJO 对流相位对赤道太平洋及印尼泥炭地火灾易发期的深远影响。
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> 自动化获取 NOAA ONI 与 BoM Wheeler-Hendon RMM</li>
+              <li><i class="fa-solid fa-check"></i> 出版级专业气候可视化图表生成</li>
+              <li><i class="fa-solid fa-check"></i> 深入的物理气候学诊断与火险预测机制</li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://github.com/ychenzgithub/ENSOMJOupdate" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
+                <i class="fa-brands fa-github"></i>
+                <span>查看 ENSOMJOupdate 仓库</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete Repository Library Explorer -->
+    <section id="repos" class="repos-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="all_tag">Project Library</div>
+          <h2 class="section-title" data-i18n="all_title">全部公开项目库 (15)</h2>
+          <p class="section-desc" data-i18n="all_desc">支持按分类筛选、关键词即时搜索与多维度排序，探索全部科研与业余开源项目。</p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="repo-toolbar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-input" class="search-input" placeholder="搜索仓库名称、技术栈、标签或关键词..." data-i18n-placeholder="search_placeholder">
+          </div>
+
+          <div class="toolbar-filters">
+            <div class="category-tabs">
+              <button class="filter-tab active" data-category="all" data-i18n="tab_all">全部项目 (15)</button>
+              <button class="filter-tab" data-category="webapps" data-i18n="tab_webapps">🚀 在线应用 (5)</button>
+              <button class="filter-tab" data-category="science" data-i18n="tab_science">🌍 地球与野火 (5)</button>
+              <button class="filter-tab" data-category="knowledge" data-i18n="tab_knowledge">📚 精选知识库 (4)</button>
+              <button class="filter-tab" data-category="algorithms" data-i18n="tab_algorithms">🧮 数学与算法 (1)</button>
+            </div>
+
+            <div class="sort-wrapper">
+              <label for="sort-select"><i class="fa-solid fa-arrow-down-short-wide"></i></label>
+              <select id="sort-select" class="sort-select">
+                <option value="featured" data-i18n="sort_featured">精选推荐优先</option>
+                <option value="stars" data-i18n="sort_stars">Star 数量排序</option>
+                <option value="name" data-i18n="sort_name">名称字母排序</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="repos-count-bar">
+          <span id="repo-count">共显示 15 / 15 个公开仓库</span>
+          <span style="font-size: 0.8rem; opacity: 0.7;"><i class="fa-brands fa-github"></i> Synchronized with GitHub</span>
+        </div>
+
+        <!-- Grid Container for Repositories -->
+        <div id="repos-grid" class="repos-grid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Author & Scientific Background -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="about_tag">About & Background</div>
+          <h2 class="section-title" data-i18n="about_title">关于作者与研究工作</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about_p1">
+              我是加州大学尔湾分校 (University of California, Irvine) 地球系统科学系的科研人员。研究方向跨越大气、海洋与陆地生态系统，重点研究全球野火特征提取、气候对火灾的调控机制、火灾排放对空气质量的影响。
+            </p>
+            <p data-i18n="about_p2">
+              作为全球火灾排放数据库 (GFED) 和卫星火灾跟踪数据系统 (FEDS) 的主要开发者之一，致力于将高时空分辨率遥感数据转化为可靠的科研数据。同时建立了南美火灾季节预测 (SAMFSS) 等平台。
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://www.ess.uci.edu/~ychen17/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-globe"></i>
+                <span>访问 UCI 官方个人主页</span>
+              </a>
+              <a href="https://www.globalfiredata.org/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-fire"></i>
+                <span>GFED 数据库官网</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-icon"><i class="fa-solid fa-satellite"></i></div>
+              <div class="highlight-content">
+                <h4 data-i18n="about_card1_title">全球火灾排放数据库 (GFED)</h4>
+                <p data-i18n="about_card1_desc">国际广泛采用的全球火灾排放基准数据集，提供 0.25° 网格高精度过火面积与痕量气体排放数据。</p>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="highlight-content">
+                <h4 data-i18n="about_card2_title">火灾事件追踪套件 (FEDS)</h4>
+                <p data-i18n="about_card2_desc">基于 VIIRS 卫星高频观测的单个火灾事件全生命周期时空演化追踪算法与数据库。</p>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="highlight-content">
+                <h4 data-i18n="about_card3_title">跨学科计算与数字人文</h4>
+                <p data-i18n="about_card3_desc">热衷于将地理信息、微距制图、密码学及实用算法转化为直观优雅的 Web 交互体验。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-title">Yang Chen · 开源项目门户</div>
+          <div>Associate Researcher · Department of Earth System Science, UC Irvine</div>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="https://github.com/ychenzgithub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+          <li><a href="https://www.ess.uci.edu/~ychen17/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-school"></i> UCI ESS</a></li>
+          <li><a href="mailto:yang.chen@uci.edu"><i class="fa-solid fa-envelope"></i> Email</a></li>
+          <li><a href="#hero"><i class="fa-solid fa-arrow-up"></i> 返回顶部</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Yang Chen. Powered by GitHub Pages. All repositories freely accessible under open-source licenses.</div>
+        <div>Designed with precision for Earth Science & Open Source Development.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
