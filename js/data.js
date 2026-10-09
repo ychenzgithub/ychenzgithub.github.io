@@ -176,61 +176,6 @@ const REPOSITORIES_DATA = [
     tags: ["Wildfire Modeling", "GeoPandas", "Rasterio", "Spatial Metrics", "IoU", "Shape Deviation"]
   },
   {
-    id: "ENSOMJOupdate",
-    name: "ENSOMJOupdate",
-    title: {
-      zh: "重大厄尔尼诺年气候指数分析与可视化",
-      en: "ENSO & MJO Climate Indices Analysis"
-    },
-    desc: {
-      zh: "自动化获取并分析 ONI 与 Wheeler-Hendon RMM 指数，对比 2026 与历史基准年 (1997, 2006, 2015) 的次季节-年际气候演变及其对印尼泥炭地野火风险的影响，生成出版级学术图表。",
-      en: "Subseasonal-to-interannual climate analysis and publication-grade visualization contrasting developing 2026 El Niño with historic events (1997, 2006, 2015) for Indonesian wildfire risk."
-    },
-    category: "science",
-    categoryLabel: {
-      zh: "地球与野火科学",
-      en: "Earth & Fire Science"
-    },
-    language: "Python",
-    langClass: "python",
-    stars: 0,
-    forks: 0,
-    repoUrl: "https://github.com/ychenzgithub/ENSOMJOupdate",
-    liveUrl: null,
-    featured: true,
-    featuredRank: 7,
-    image: "assets/enso_mjo.png",
-    icon: "fa-solid fa-cloud-sun-rain",
-    tags: ["Climate Dynamics", "ENSO (ONI)", "MJO (RMM)", "Wildfire Risk", "Scientific Visualization"]
-  },
-  {
-    id: "OCI",
-    name: "OCI",
-    title: {
-      zh: "海洋气候指数交互平台",
-      en: "Ocean Climate Indices (OCI) App"
-    },
-    desc: {
-      zh: "海洋气候核心指数自动化跟踪与交互式分析 Web 工具，支持 ONI (Oceanic Niño Index) 等关键指数的时间序列可视化与气候诊断。",
-      en: "Automated monitoring, processing, and Streamlit visualization of critical ocean climate indices including Oceanic Niño Index (ONI)."
-    },
-    category: "science",
-    categoryLabel: {
-      zh: "地球与野火科学",
-      en: "Earth & Fire Science"
-    },
-    language: "Python",
-    langClass: "python",
-    stars: 0,
-    forks: 0,
-    repoUrl: "https://github.com/ychenzgithub/OCI",
-    liveUrl: "https://share.streamlit.io/ychenzgithub/oci/ONI.py",
-    featured: false,
-    image: null,
-    icon: "fa-solid fa-water",
-    tags: ["Streamlit", "Ocean Climate", "ENSO", "Time Series", "Web App"]
-  },
-  {
     id: "GEE",
     name: "GEE",
     title: {
