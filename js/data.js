@@ -311,6 +311,33 @@ const REPOSITORIES_DATA = [
     tags: ["Rubik's Cube", "CFOP", "3D Player", "Layer-by-Layer", "Tutorial", "Algorithms"]
   },
   {
+    id: "TreeID",
+    name: "TreeID",
+    title: {
+      zh: "树木识别图鉴",
+      en: "Tree ID: Photo Guide to Identifying Trees"
+    },
+    desc: {
+      zh: "树木识别图鉴网站：92 种常见树的整体、卡通、叶、花、果、树皮照片对照；Science Olympiad Forest Finds 33 个树种及检索表筛选与易混树种对比；针叶树分类、植物学基础图、城市树木地图与识别工具。中英双语。",
+      en: "Photo guide to identifying trees: 92 common trees shown by whole tree, leaf, flower, fruit and bark; 33 Science Olympiad Forest Finds species with identification-key filters and look-alikes; conifer classification, botany basics, city tree maps and ID tools."
+    },
+    category: "knowledge",
+    categoryLabel: {
+      zh: "精选知识库",
+      en: "Curated Knowledge"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/TreeID",
+    liveUrl: "https://ychenzgithub.github.io/TreeID/",
+    featured: false,
+    image: null,
+    icon: "fa-solid fa-tree",
+    tags: ["Tree Identification", "Botany", "Science Olympiad", "Photo Atlas", "Field Guide"]
+  },
+  {
     id: "100PrisonersProblem",
     name: "100PrisonersProblem",
     title: {

@@ -1,7 +1,7 @@
 # ychenzgithub — Open Source Projects & Web Applications
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Website-2ea44f?style=for-the-badge&logo=github)](https://ychenzgithub.github.io/)
-[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-13-blue?style=for-the-badge)](https://github.com/ychenzgithub?tab=repositories)
+[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-14-blue?style=for-the-badge)](https://github.com/ychenzgithub?tab=repositories)
 
 > Welcome to **[ychenzgithub.github.io](https://ychenzgithub.github.io/)**, the open-source repository directory and project showcase for **ychenzgithub**.
 
@@ -16,6 +16,7 @@
 | **IrvineAsianFood** | [🚀 访问平台](https://ychenzgithub.github.io/IrvineAsianFood/) | [GitHub](https://github.com/ychenzgithub/IrvineAsianFood) | 尔湾及橙县周边亚洲美食地图（200+ 餐厅、奶茶甜品、亚洲超市空间探索与分类筛选） | TypeScript, Leaflet, GeoJSON |
 | **Codebusters Center** | [🚀 访问平台](https://ychenzgithub.github.io/codebusters-training-center/) | [GitHub](https://github.com/ychenzgithub/codebusters-training-center) | Science Olympiad Codebusters (Division B 2026–27) 全功能训练平台：13种密码教程、习题生成与模拟考 | JavaScript, Cryptography, Interactive Tests |
 | **RubiksCube** | [🚀 访问平台](https://ychenzgithub.github.io/RubiksCube/) | [GitHub](https://github.com/ychenzgithub/RubiksCube) | 中英双语魔方教程网页：三阶层先法、CFOP（F2L / OLL / PLL）、二阶与四阶降维法，示意图由公式自动生成，公式可在 3D 魔方上播放 | HTML, JavaScript, cubing.js |
+| **TreeID** | [🚀 访问平台](https://ychenzgithub.github.io/TreeID/) | [GitHub](https://github.com/ychenzgithub/TreeID) | 树木识别图鉴：92 种常见树的叶、花、果、树皮照片对照，Science Olympiad Forest Finds 树种与检索表，针叶树分类与城市树木地图 | HTML, JavaScript |
 
 ---
 
@@ -33,6 +34,7 @@
 - **[Onlinemaps](https://github.com/ychenzgithub/Onlinemaps)**: 全球顶级在线地图与时空数据可视化平台精选（Windy 全球气象、哈佛全球经济复杂度地图、NASA 夜间灯光等）。
 - **[Cov19](https://github.com/ychenzgithub/Cov19)**: COVID-19 疫情数据可视化、时空追踪地图与流行病学模型合集。
 - **[RubiksCube](https://github.com/ychenzgithub/RubiksCube)** ([在线网页](https://ychenzgithub.github.io/RubiksCube/)): 自行整理编写的魔方入门与进阶教程（三阶层先法、CFOP、二阶魔方、四阶魔方降维法），已整理成中英双语交互式知识网页。
+- **[TreeID](https://github.com/ychenzgithub/TreeID)** ([在线网页](https://ychenzgithub.github.io/TreeID/)): 中英双语树木识别图鉴，含常见树照片对照、Science Olympiad Forest Finds 树种与检索表、易混树种对比和针叶树分类。
 
 ---
 
