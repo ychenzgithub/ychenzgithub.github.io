@@ -287,28 +287,28 @@ const REPOSITORIES_DATA = [
     id: "RubiksCube",
     name: "RubiksCube",
     title: {
-      zh: "魔方初级到进阶完全指南",
-      en: "Complete Rubik's Cube Tutorial"
+      zh: "魔方教程：从层先法到 CFOP",
+      en: "Rubik's Cube Guide: Beginner to CFOP"
     },
     desc: {
-      zh: "原创总结的中文魔方教程，详解三阶魔方基础层先法 (LBL)、CFOP 快速法核心公式、二阶魔方以及四阶魔方降维法，图文并茂、公式清晰实用。",
-      en: "Comprehensive Chinese tutorial covering 2x2, 3x3 (layer-by-layer LBL method and CFOP foundation), and 4x4 reduction method with clear diagrams."
+      zh: "中英双语魔方教程网页：标记方法、三阶层先法、CFOP（F2L / OLL / PLL）、二阶魔方及四阶降维法与奇偶矫正。每个情形的示意图由公式自动生成，所有公式都可在 3D 魔方上播放演示。",
+      en: "Bilingual Rubik's Cube guide website: notation, the 3x3 layer-by-layer method, CFOP (F2L / OLL / PLL), the 2x2, and 4x4 reduction with parity. Every case diagram is generated from its algorithm, and every algorithm plays on a 3D cube."
     },
     category: "knowledge",
     categoryLabel: {
       zh: "精选知识库",
       en: "Curated Knowledge"
     },
-    language: "Markdown",
-    langClass: "markdown",
+    language: "HTML / JavaScript",
+    langClass: "html",
     stars: 4,
     forks: 0,
     repoUrl: "https://github.com/ychenzgithub/RubiksCube",
-    liveUrl: null,
+    liveUrl: "https://ychenzgithub.github.io/RubiksCube/",
     featured: false,
     image: null,
     icon: "fa-solid fa-cube",
-    tags: ["Rubik's Cube", "CFOP", "Layer-by-Layer", "Algorithms", "Tutorial"]
+    tags: ["Rubik's Cube", "CFOP", "3D Player", "Layer-by-Layer", "Tutorial", "Algorithms"]
   },
   {
     id: "100PrisonersProblem",

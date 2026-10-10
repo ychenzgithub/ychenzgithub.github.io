@@ -15,6 +15,7 @@
 | **GeoGuessr-Hub** | [🚀 访问平台](https://ychenzgithub.github.io/GeoGuessr-Hub/) | [GitHub](https://github.com/ychenzgithub/GeoGuessr-Hub) | GeoGuessr 知识宝典与速查工具：全球街景代数、电线杆、路桩、车顶车身 Meta 及交互世界图集 | JavaScript, CSS3, Interactive Atlas |
 | **IrvineAsianFood** | [🚀 访问平台](https://ychenzgithub.github.io/IrvineAsianFood/) | [GitHub](https://github.com/ychenzgithub/IrvineAsianFood) | 尔湾及橙县周边亚洲美食地图（200+ 餐厅、奶茶甜品、亚洲超市空间探索与分类筛选） | TypeScript, Leaflet, GeoJSON |
 | **Codebusters Center** | [🚀 访问平台](https://ychenzgithub.github.io/codebusters-training-center/) | [GitHub](https://github.com/ychenzgithub/codebusters-training-center) | Science Olympiad Codebusters (Division B 2026–27) 全功能训练平台：13种密码教程、习题生成与模拟考 | JavaScript, Cryptography, Interactive Tests |
+| **RubiksCube** | [🚀 访问平台](https://ychenzgithub.github.io/RubiksCube/) | [GitHub](https://github.com/ychenzgithub/RubiksCube) | 中英双语魔方教程网页：三阶层先法、CFOP（F2L / OLL / PLL）、二阶与四阶降维法，示意图由公式自动生成，公式可在 3D 魔方上播放 | HTML, JavaScript, cubing.js |
 
 ---
 
@@ -31,7 +32,7 @@
 - **[OnlineTools](https://github.com/ychenzgithub/OnlineTools)**: 精选科研与日常使用的实用在线工具、交互式可视化网页、公开课与高质量电子书推荐清单。
 - **[Onlinemaps](https://github.com/ychenzgithub/Onlinemaps)**: 全球顶级在线地图与时空数据可视化平台精选（Windy 全球气象、哈佛全球经济复杂度地图、NASA 夜间灯光等）。
 - **[Cov19](https://github.com/ychenzgithub/Cov19)**: COVID-19 疫情数据可视化、时空追踪地图与流行病学模型合集。
-- **[RubiksCube](https://github.com/ychenzgithub/RubiksCube)**: 自行整理编写的中文魔方入门与进阶教程（三阶层先法、CFOP 基础、二阶魔方、四阶魔方降维法）。
+- **[RubiksCube](https://github.com/ychenzgithub/RubiksCube)** ([在线网页](https://ychenzgithub.github.io/RubiksCube/)): 自行整理编写的魔方入门与进阶教程（三阶层先法、CFOP、二阶魔方、四阶魔方降维法），已整理成中英双语交互式知识网页。
 
 ---
 
