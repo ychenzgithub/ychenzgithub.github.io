@@ -142,7 +142,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/GFED5NRT",
     liveUrl: null,
     featured: true,
-    featuredRank: 5,
+    featuredRank: 7,
     image: "assets/gfed5nrt_fires.jpg",
     icon: "fa-solid fa-fire",
     tags: ["Wildfire", "Remote Sensing", "GFED5", "Chemical Emissions", "VIIRS 375m", "Python"]
@@ -170,7 +170,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/FireSpreadIndices",
     liveUrl: null,
     featured: true,
-    featuredRank: 6,
+    featuredRank: 8,
     image: "assets/fire_spread.png",
     icon: "fa-solid fa-fire-flame-curved",
     tags: ["Wildfire Modeling", "GeoPandas", "Rasterio", "Spatial Metrics", "IoU", "Shape Deviation"]
@@ -294,10 +294,10 @@ const REPOSITORIES_DATA = [
       zh: "中英双语魔方教程网页：标记方法、三阶层先法、CFOP（F2L / OLL / PLL）、二阶魔方及四阶降维法与奇偶矫正。每个情形的示意图由公式自动生成，所有公式都可在 3D 魔方上播放演示。",
       en: "Bilingual Rubik's Cube guide website: notation, the 3x3 layer-by-layer method, CFOP (F2L / OLL / PLL), the 2x2, and 4x4 reduction with parity. Every case diagram is generated from its algorithm, and every algorithm plays on a 3D cube."
     },
-    category: "knowledge",
+    category: "webapps",
     categoryLabel: {
-      zh: "精选知识库",
-      en: "Curated Knowledge"
+      zh: "交互应用",
+      en: "Live Web App"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -305,7 +305,8 @@ const REPOSITORIES_DATA = [
     forks: 0,
     repoUrl: "https://github.com/ychenzgithub/RubiksCube",
     liveUrl: "https://ychenzgithub.github.io/RubiksCube/",
-    featured: false,
+    featured: true,
+    featuredRank: 5,
     image: null,
     icon: "fa-solid fa-cube",
     tags: ["Rubik's Cube", "CFOP", "3D Player", "Layer-by-Layer", "Tutorial", "Algorithms"]
@@ -321,10 +322,10 @@ const REPOSITORIES_DATA = [
       zh: "树木识别图鉴网站：92 种常见树的整体、卡通、叶、花、果、树皮照片对照；Science Olympiad Forest Finds 33 个树种及检索表筛选与易混树种对比；针叶树分类、植物学基础图、城市树木地图与识别工具。中英双语。",
       en: "Photo guide to identifying trees: 92 common trees shown by whole tree, leaf, flower, fruit and bark; 33 Science Olympiad Forest Finds species with identification-key filters and look-alikes; conifer classification, botany basics, city tree maps and ID tools."
     },
-    category: "knowledge",
+    category: "webapps",
     categoryLabel: {
-      zh: "精选知识库",
-      en: "Curated Knowledge"
+      zh: "交互应用",
+      en: "Live Web App"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -332,7 +333,8 @@ const REPOSITORIES_DATA = [
     forks: 0,
     repoUrl: "https://github.com/ychenzgithub/TreeID",
     liveUrl: "https://ychenzgithub.github.io/TreeID/",
-    featured: false,
+    featured: true,
+    featuredRank: 6,
     image: null,
     icon: "fa-solid fa-tree",
     tags: ["Tree Identification", "Botany", "Science Olympiad", "Photo Atlas", "Field Guide"]

@@ -33,8 +33,6 @@
 - **[OnlineTools](https://github.com/ychenzgithub/OnlineTools)**: 精选科研与日常使用的实用在线工具、交互式可视化网页、公开课与高质量电子书推荐清单。
 - **[Onlinemaps](https://github.com/ychenzgithub/Onlinemaps)**: 全球顶级在线地图与时空数据可视化平台精选（Windy 全球气象、哈佛全球经济复杂度地图、NASA 夜间灯光等）。
 - **[Cov19](https://github.com/ychenzgithub/Cov19)**: COVID-19 疫情数据可视化、时空追踪地图与流行病学模型合集。
-- **[RubiksCube](https://github.com/ychenzgithub/RubiksCube)** ([在线网页](https://ychenzgithub.github.io/RubiksCube/)): 自行整理编写的魔方入门与进阶教程（三阶层先法、CFOP、二阶魔方、四阶魔方降维法），已整理成中英双语交互式知识网页。
-- **[TreeID](https://github.com/ychenzgithub/TreeID)** ([在线网页](https://ychenzgithub.github.io/TreeID/)): 中英双语树木识别图鉴，含常见树照片对照、Science Olympiad Forest Finds 树种与检索表、易混树种对比和针叶树分类。
 
 ---
 
