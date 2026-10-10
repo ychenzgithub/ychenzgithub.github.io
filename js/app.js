@@ -6,9 +6,12 @@
 (function () {
   'use strict';
 
-  // State
-  let currentLang = localStorage.getItem('yc_lang') || 'zh';
-  let currentTheme = localStorage.getItem('yc_theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  // State — defaults are English + light; only an explicit toggle is remembered.
+  // (Keys renamed from yc_lang/yc_theme, which older versions saved on every visit.)
+  const LANG_KEY = 'ychub_lang';
+  const THEME_KEY = 'ychub_theme';
+  let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+  let currentTheme = localStorage.getItem(THEME_KEY) || 'light';
   let currentCategory = 'all';
   let searchQuery = '';
   let sortBy = 'featured';
@@ -36,8 +39,11 @@
   function applyTheme(theme) {
     currentTheme = theme;
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('yc_theme', theme);
+    updateThemeToggle();
+  }
 
+  function updateThemeToggle() {
+    const theme = currentTheme;
     if (themeToggleBtn) {
       const icon = themeToggleBtn.querySelector('i');
       if (icon) {
@@ -54,12 +60,12 @@
 
   function toggleTheme() {
     applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    localStorage.setItem(THEME_KEY, currentTheme);
   }
 
   // Language Management
   function applyLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('yc_lang', lang);
     document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
 
     // Update i18n text nodes
@@ -82,16 +88,18 @@
     if (langToggleBtn) {
       const langText = langToggleBtn.querySelector('.lang-text');
       if (langText) {
-        langText.textContent = lang === 'zh' ? 'EN' : '中文';
+        langText.textContent = lang === 'zh' ? 'EN' : 'ZH';
       }
-      langToggleBtn.setAttribute('title', lang === 'zh' ? 'Switch to English' : '切换为中文');
+      langToggleBtn.setAttribute('title', lang === 'zh' ? 'Switch to English' : 'Switch to Chinese');
     }
 
+    updateThemeToggle();
     renderRepositories();
   }
 
   function toggleLanguage() {
     applyLanguage(currentLang === 'zh' ? 'en' : 'zh');
+    localStorage.setItem(LANG_KEY, currentLang);
   }
 
   // Event Listeners
@@ -206,9 +214,9 @@
     }
 
     reposGrid.innerHTML = filtered.map(repo => {
-      const title = repo.title[currentLang] || repo.title.zh;
-      const desc = repo.desc[currentLang] || repo.desc.zh;
-      const catLabel = repo.categoryLabel[currentLang] || repo.categoryLabel.zh;
+      const title = repo.title[currentLang] || repo.title.en;
+      const desc = repo.desc[currentLang] || repo.desc.en;
+      const catLabel = repo.categoryLabel[currentLang] || repo.categoryLabel.en;
 
       const liveBtn = repo.liveUrl ? `
         <a href="${repo.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-card-launch" title="${currentLang === 'zh' ? '在线体验' : 'Live Demo'}">
@@ -283,9 +291,34 @@
     feat_tag: { zh: "Interactive Applications", en: "Interactive Applications" },
     feat_title: { zh: "精选在线交互应用", en: "Featured Web Applications" },
     feat_desc: { zh: "基于现代 Web 技术构建的在线平台，涵盖古地图微距赏析、GeoGuessr 速查、区域美食导览与密码学交互训练。", en: "Interactive platforms built with modern web tech, covering deep-zoom cartography, GeoGuessr meta tools, food discovery, and cipher education." },
+    btn_code: { zh: "源码", en: "Code" },
+    feat1_title: { zh: "古地图超清微距交互赏析平台", en: "Historical Map Appreciation Platform" },
+    feat1_desc: { zh: "历史地图超高清微距交互探索平台。支持利玛窦《坤舆万国全图》(1602) 与卫匡国《中国新图志》(1655) 毫米级高分辨率金字塔瓦片缩放与历史图层解析，带来极致细腻的沉浸式赏析体验。", en: "An ultra-high-resolution deep-zoom platform for exploring historical maps. Zoom into millimeter-level pyramid tiles of Matteo Ricci's Kunyu Wanguo Quantu (1602) and Martino Martini's Novus Atlas Sinensis (1655), with historical layer annotations for an immersive viewing experience." },
+    feat1_btn: { zh: "进入赏析平台", en: "Launch Map Viewer" },
+    feat2_title: { zh: "GeoGuessr 知识宝典与速查工具", en: "GeoGuessr Knowledge Hub & Quick Reference" },
+    feat2_desc: { zh: "提炼自实战笔记的全球 GeoGuessr Meta 识别指南与高效复习系统。涵盖全球街景相机代数、电线杆、路桩、车顶车身天线特征以及精细化交互式国家与地区图集，辅助竞技选手极速定点。", en: "A global GeoGuessr meta identification guide and review system distilled from real game notes. Covers Street View camera generations, utility poles, bollards, car and antenna meta, and a detailed interactive atlas of countries and regions to help competitive players pinpoint locations fast." },
+    feat2_btn: { zh: "进入知识宝典", en: "Open the Hub" },
+    feat3_title: { zh: "尔湾及周边亚洲美食地图", en: "Irvine & Orange County Asian Food Map" },
+    feat3_desc: { zh: "涵盖尔湾及橙县周边（Tustin, Costa Mesa 等）200+ 亚洲餐厅、奶茶甜品及超市的交互式美食地图，支持品类筛选与空间检索。", en: "An interactive map of 200+ Asian restaurants, boba and dessert shops, and supermarkets across Irvine and nearby Orange County cities (Tustin, Costa Mesa, and more), with category filters and spatial search." },
+    feat3_btn: { zh: "体验美食地图", en: "Explore the Food Map" },
+    feat4_title: { zh: "Codebusters 密码学训练中心", en: "Codebusters Cryptography Training Center" },
+    feat4_desc: { zh: "面向 Science Olympiad Codebusters (Division B 2026–27) 训练平台，涵盖全 13 种密码教程、无限习题生成器、限时竞速与模拟考。", en: "A training platform for Science Olympiad Codebusters (Division B, 2026–27), with tutorials for all 13 cipher types, unlimited practice generators, timed speed drills, and mock tests." },
+    feat4_btn: { zh: "进入训练中心", en: "Start Training" },
     sci_tag: { zh: "Scientific Computing", en: "Scientific Computing" },
     sci_title: { zh: "野火遥感与空间科学计算", en: "Wildfire & Spatial Computing" },
     sci_desc: { zh: "结合卫星遥感、空间分析与数值基准度量，提供公开开源的地球科学计算工具与数据处理管线。", en: "Open-source computational toolkits and data pipelines for satellite fire monitoring and spatial spread benchmark metrics." },
+    sci1_title: { zh: "GFED5NRT · 全球近实时火灾排放", en: "GFED5NRT · Global Near Real-Time Fire Emissions" },
+    sci1_desc: { zh: "基于 VIIRS 375m 高分辨率卫星主动火点观测，结合 GFED5 区域与植被类型衍生有效过火面积 (EFA) 和燃料消耗 (FC) 标量，在 0.25° 网格上自动化生成近实时全球过火面积与化学物种排放。", en: "Combines VIIRS 375m satellite active fire detections with GFED5 region- and vegetation-specific effective fire area (EFA) and fuel consumption (FC) scalars to automatically generate near real-time global burned area and chemical species emissions on a 0.25° grid." },
+    sci1_f1: { zh: "每日自动化拉取 Suomi-NPP / NOAA-20 卫星火点", en: "Automated daily retrieval of Suomi-NPP / NOAA-20 active fire detections" },
+    sci1_f2: { zh: "严格的多物种化学排放因子 (EF) 矩阵转换", en: "Rigorous multi-species emission factor (EF) matrix conversion" },
+    sci1_f3: { zh: "支持端到端云端同步与全球时空制图", en: "End-to-end cloud sync and global spatiotemporal mapping" },
+    sci1_btn: { zh: "查看 GFED5NRT 仓库", en: "View GFED5NRT Repository" },
+    sci2_title: { zh: "FireSpreadIndices · 蔓延模拟评估库", en: "FireSpreadIndices · Spread Simulation Benchmark" },
+    sci2_desc: { zh: "专业评估野火蔓延数值模拟与观测边界空间吻合度的 Python 基准库。涵盖整体吻合度 (IoU, Dice, SDI, ADI, SSIM) 及过预测/欠预测分解指标。", en: "A Python benchmark library for evaluating the spatial agreement between simulated wildfire spread and observed fire perimeters. Includes overall agreement metrics (IoU, Dice, SDI, ADI, SSIM) and over-/under-prediction decomposition." },
+    sci2_f1: { zh: "矢量多边形与栅格二值/连续网格双通道计算", en: "Supports both vector polygons and binary/continuous raster grids" },
+    sci2_f2: { zh: "完整的火灾蔓延形状偏差与面积偏差空间度量", en: "Complete spatial metrics for fire spread shape and area deviation" },
+    sci2_f3: { zh: "包含可重现的 Jupyter 测试工作流与可视化", en: "Reproducible Jupyter test workflows and visualizations" },
+    sci2_btn: { zh: "查看 FireSpreadIndices 源码", en: "View FireSpreadIndices Source" },
     all_tag: { zh: "Project Library", en: "Project Library" },
     all_title: { zh: "全部公开项目库 (13)", en: "All Public Repositories (13)" },
     all_desc: { zh: "支持按分类筛选、关键词即时搜索与多维度排序，探索全部科研与开源工具。", en: "Explore all scientific packages, interactive web tools, curated knowledge bases, and algorithms." },
@@ -307,7 +340,11 @@
     about_card2_title: { zh: "地球大数据与遥感计算", en: "Geospatial Big Data & Computing" },
     about_card2_desc: { zh: "Google Earth Engine (GEE) 系统技术架构、时空栅格运算与遥感数据处理。", en: "Google Earth Engine (GEE) architecture, spatiotemporal raster operations, and remote sensing pipelines." },
     about_card3_title: { zh: "交互式地图与工具", en: "Interactive Maps & Web Tools" },
-    about_card3_desc: { zh: "高分辨率微距古地图探索、GeoGuessr 速查宝典、美食地图及密码学训练平台。", en: "Deep-zoom historical cartography, GeoGuessr meta hub, discovery maps, and cryptography tools." }
+    about_card3_desc: { zh: "高分辨率微距古地图探索、GeoGuessr 速查宝典、美食地图及密码学训练平台。", en: "Deep-zoom historical cartography, GeoGuessr meta hub, discovery maps, and cryptography tools." },
+    about_btn_all: { zh: "查看所有 13 个项目", en: "View All 13 Projects" },
+    footer_title: { zh: "ychenzgithub · 开源项目门户", en: "ychenzgithub · Open Source Portal" },
+    footer_repos: { zh: "项目库", en: "Project Library" },
+    footer_top: { zh: "返回顶部", en: "Back to Top" }
   };
 
   // Launch on DOM ready
