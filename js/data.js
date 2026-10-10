@@ -56,7 +56,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/GeoGuessr-Hub/",
     featured: true,
     featuredRank: 2,
-    image: null,
+    image: "assets/geoguessr_hub.jpg",
     icon: "fa-solid fa-earth-americas",
     placeholderType: "geo",
     tags: ["Interactive Atlas", "Street View Meta", "Geography", "Competitive Guides", "Bollards & Poles"]
@@ -85,7 +85,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/IrvineAsianFood/",
     featured: true,
     featuredRank: 3,
-    image: null,
+    image: "assets/irvine_asian_food.jpg",
     icon: "fa-solid fa-bowl-food",
     placeholderType: "food",
     tags: ["TypeScript", "Interactive Map", "Leaflet", "Orange County", "Food Discovery"]
@@ -114,7 +114,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/codebusters-training-center/",
     featured: true,
     featuredRank: 4,
-    image: null,
+    image: "assets/codebusters.jpg",
     icon: "fa-solid fa-key",
     placeholderType: "crypto",
     tags: ["Science Olympiad", "Cryptography", "Cipher Training", "Interactive Games", "Education"]
@@ -143,7 +143,7 @@ const REPOSITORIES_DATA = [
     liveUrl: null,
     featured: true,
     featuredRank: 5,
-    image: null,
+    image: "assets/gfed5nrt_fires.jpg",
     icon: "fa-solid fa-fire",
     tags: ["Wildfire", "Remote Sensing", "GFED5", "Chemical Emissions", "VIIRS 375m", "Python"]
   },

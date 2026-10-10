@@ -577,6 +577,11 @@ img {
   transform: scale(1.04);
 }
 
+/* Screenshots with text: show the whole image instead of cropping it */
+.card-media.fit-contain img {
+  object-fit: contain;
+}
+
 .media-badge {
   position: absolute;
   top: 1rem;
