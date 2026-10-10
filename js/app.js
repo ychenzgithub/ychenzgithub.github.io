@@ -7,10 +7,12 @@
   'use strict';
 
   // State — defaults are English + light; only an explicit toggle is remembered.
+  // Language is kept per tab (sessionStorage), so every new visit opens in English.
   // (Keys renamed from yc_lang/yc_theme, which older versions saved on every visit.)
   const LANG_KEY = 'ychub_lang';
   const THEME_KEY = 'ychub_theme';
-  let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+  localStorage.removeItem(LANG_KEY); // drop a Chinese choice saved by the previous version
+  let currentLang = sessionStorage.getItem(LANG_KEY) || 'en';
   let currentTheme = localStorage.getItem(THEME_KEY) || 'light';
   let currentCategory = 'all';
   let searchQuery = '';
@@ -99,7 +101,7 @@
 
   function toggleLanguage() {
     applyLanguage(currentLang === 'zh' ? 'en' : 'zh');
-    localStorage.setItem(LANG_KEY, currentLang);
+    sessionStorage.setItem(LANG_KEY, currentLang);
   }
 
   // Event Listeners
