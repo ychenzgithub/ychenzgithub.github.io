@@ -1,7 +1,7 @@
 # ychenzgithub — Open Source Projects & Web Applications
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Website-2ea44f?style=for-the-badge&logo=github)](https://ychenzgithub.github.io/)
-[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-14-blue?style=for-the-badge)](https://github.com/ychenzgithub?tab=repositories)
+[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-15-blue?style=for-the-badge)](https://github.com/ychenzgithub?tab=repositories)
 
 > Welcome to **[ychenzgithub.github.io](https://ychenzgithub.github.io/)**, the open-source repository directory and project showcase for **ychenzgithub**.
 
@@ -17,6 +17,7 @@
 | **Codebusters Center** | [🚀 访问平台](https://ychenzgithub.github.io/codebusters-training-center/) | [GitHub](https://github.com/ychenzgithub/codebusters-training-center) | Science Olympiad Codebusters (Division B 2026–27) 全功能训练平台：13种密码教程、习题生成与模拟考 | JavaScript, Cryptography, Interactive Tests |
 | **RubiksCube** | [🚀 访问平台](https://ychenzgithub.github.io/RubiksCube/) | [GitHub](https://github.com/ychenzgithub/RubiksCube) | 中英双语魔方教程网页：三阶层先法、CFOP（F2L / OLL / PLL）、二阶与四阶降维法，示意图由公式自动生成，公式可在 3D 魔方上播放 | HTML, JavaScript, cubing.js |
 | **TreeID** | [🚀 访问平台](https://ychenzgithub.github.io/TreeID/) | [GitHub](https://github.com/ychenzgithub/TreeID) | 树木识别图鉴：92 种常见树的叶、花、果、树皮照片对照，Science Olympiad Forest Finds 树种与检索表，针叶树分类与城市树木地图 | HTML, JavaScript |
+| **WildflowerID** | [🚀 访问平台](https://ychenzgithub.github.io/WildflowerID/) | [GitHub](https://github.com/ychenzgithub/WildflowerID) | 野花识别图鉴：61 种加州、园艺与加拿大落基山野花的照片、识别要点和 iNaturalist 花期日历，易混花卉对比、花的结构与看图识花小测验 | HTML, JavaScript |
 
 ---
 

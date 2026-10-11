@@ -142,7 +142,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/GFED5NRT",
     liveUrl: null,
     featured: true,
-    featuredRank: 7,
+    featuredRank: 8,
     image: "assets/gfed5nrt_fires.jpg",
     icon: "fa-solid fa-fire",
     tags: ["Wildfire", "Remote Sensing", "GFED5", "Chemical Emissions", "VIIRS 375m", "Python"]
@@ -170,7 +170,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/FireSpreadIndices",
     liveUrl: null,
     featured: true,
-    featuredRank: 8,
+    featuredRank: 9,
     image: "assets/fire_spread.png",
     icon: "fa-solid fa-fire-flame-curved",
     tags: ["Wildfire Modeling", "GeoPandas", "Rasterio", "Spatial Metrics", "IoU", "Shape Deviation"]
@@ -338,6 +338,34 @@ const REPOSITORIES_DATA = [
     image: null,
     icon: "fa-solid fa-tree",
     tags: ["Tree Identification", "Botany", "Science Olympiad", "Photo Atlas", "Field Guide"]
+  },
+  {
+    id: "WildflowerID",
+    name: "WildflowerID",
+    title: {
+      zh: "野花识别图鉴",
+      en: "Wildflower ID: Photo Guide to Wildflowers"
+    },
+    desc: {
+      zh: "野花识别图鉴网站：61 种加州野花、园艺与外来花卉和加拿大落基山野花，配照片、识别要点、毒性提示和根据 iNaturalist 记录统计的花期日历；易混花卉对比、花的结构与花序图解、常见科、赏花地点与工具、看图识花小测验。中英双语。",
+      en: "Photo guide to 61 wildflowers of California, gardens and the Canadian Rockies, with ID features, toxicity cautions and bloom calendars from iNaturalist records; look-alike pairs, flower anatomy and inflorescence diagrams, plant families, places, tools and a quiz."
+    },
+    category: "webapps",
+    categoryLabel: {
+      zh: "交互应用",
+      en: "Live Web App"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/WildflowerID",
+    liveUrl: "https://ychenzgithub.github.io/WildflowerID/",
+    featured: true,
+    featuredRank: 7,
+    image: null,
+    icon: "fa-solid fa-seedling",
+    tags: ["Wildflowers", "Botany", "Plant Identification", "Bloom Calendar", "Field Guide"]
   },
   {
     id: "100PrisonersProblem",
