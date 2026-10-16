@@ -142,7 +142,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/GFED5NRT",
     liveUrl: null,
     featured: true,
-    featuredRank: 8,
+    featuredRank: 9,
     image: "assets/gfed5nrt_fires.jpg",
     icon: "fa-solid fa-fire",
     tags: ["Wildfire", "Remote Sensing", "GFED5", "Chemical Emissions", "VIIRS 375m", "Python"]
@@ -170,7 +170,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/FireSpreadIndices",
     liveUrl: null,
     featured: true,
-    featuredRank: 9,
+    featuredRank: 10,
     image: "assets/fire_spread.png",
     icon: "fa-solid fa-fire-flame-curved",
     tags: ["Wildfire Modeling", "GeoPandas", "Rasterio", "Spatial Metrics", "IoU", "Shape Deviation"]
@@ -366,6 +366,34 @@ const REPOSITORIES_DATA = [
     image: null,
     icon: "fa-solid fa-seedling",
     tags: ["Wildflowers", "Botany", "Plant Identification", "Bloom Calendar", "Field Guide"]
+  },
+  {
+    id: "ClassicalMusic",
+    name: "ClassicalMusic",
+    title: {
+      zh: "古典音乐典藏：55 首传世名作",
+      en: "Classical Music Collection: 55 Masterworks"
+    },
+    desc: {
+      zh: "精选 55 首跨越巴洛克、古典、浪漫、印象派与现代主义时期的经典名作。支持一键内置视频播放、详尽作品导赏背景与乐章解析、中英双语即时切换与深浅主题。",
+      en: "Curated showcase of 55 timeless classical masterworks across Baroque, Classical, Romantic, Impressionist, and Modern eras, featuring embedded HD playback, program notes, composer biographies, and bilingual toggle."
+    },
+    category: "webapps",
+    categoryLabel: {
+      zh: "交互应用",
+      en: "Live Web App"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/ClassicalMusic",
+    liveUrl: "https://ychenzgithub.github.io/ClassicalMusic/",
+    featured: true,
+    featuredRank: 8,
+    image: "assets/classicalmusic.webp",
+    icon: "fa-solid fa-music",
+    tags: ["Classical Music", "Masterpieces", "Music Appreciation", "YouTube Player", "Bilingual"]
   },
   {
     id: "100PrisonersProblem",
