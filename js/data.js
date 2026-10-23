@@ -30,7 +30,7 @@ const REPOSITORIES_DATA = [
     featuredRank: 1,
     image: "assets/map_appreciation.jpg",
     icon: "fa-solid fa-map-location-dot",
-    tags: ["Deep Zoom", "OpenSeadragon", "Cartography", "Digital Humanities", "Historical Maps"]
+    tags: ["Deep Zoom", "Leaflet Pyramid", "Cartography", "Digital Humanities", "Historical Maps"]
   },
   {
     id: "GeoGuessr-Hub",
@@ -69,8 +69,8 @@ const REPOSITORIES_DATA = [
       en: "Irvine Asian Food & Market Map"
     },
     desc: {
-      zh: "尔湾及橙县（Tustin, Costa Mesa, Newport Beach 等）亚洲餐饮、甜品奶茶、亚洲超市交互式发现地图，支持品类筛选、地理距离及空间检索。",
-      en: "Interactive, responsive food discovery web app for 200+ Asian restaurants, dessert shops, and supermarkets across Irvine and Orange County with rich category filters."
+      zh: "尔湾及橙县（Tustin, Costa Mesa, Newport Beach 等）400+ 亚洲餐饮、甜品奶茶、亚洲超市交互式发现地图，支持品类筛选、地理距离及空间检索。",
+      en: "Interactive, responsive food discovery web app for 400+ Asian restaurants, dessert shops, and supermarkets across Irvine and Orange County with rich category filters."
     },
     category: "webapps",
     categoryLabel: {
@@ -223,7 +223,7 @@ const REPOSITORIES_DATA = [
     stars: 0,
     forks: 0,
     repoUrl: "https://github.com/ychenzgithub/OnlineTools",
-    liveUrl: null,
+    liveUrl: "https://ychenzgithub.github.io/OnlineTools/",
     featured: false,
     image: null,
     icon: "fa-solid fa-wrench",
@@ -307,7 +307,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/RubiksCube/",
     featured: true,
     featuredRank: 5,
-    image: null,
+    image: "assets/rubikscube.webp",
     icon: "fa-solid fa-cube",
     tags: ["Rubik's Cube", "CFOP", "3D Player", "Layer-by-Layer", "Tutorial", "Algorithms"]
   },
@@ -335,7 +335,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/TreeID/",
     featured: true,
     featuredRank: 6,
-    image: null,
+    image: "assets/treeid.webp",
     icon: "fa-solid fa-tree",
     tags: ["Tree Identification", "Botany", "Science Olympiad", "Photo Atlas", "Field Guide"]
   },
@@ -347,8 +347,8 @@ const REPOSITORIES_DATA = [
       en: "Wildflower ID: Photo Guide to Wildflowers"
     },
     desc: {
-      zh: "野花识别图鉴网站：61 种加州野花、园艺与外来花卉和加拿大落基山野花，配照片、识别要点、毒性提示和根据 iNaturalist 记录统计的花期日历；易混花卉对比、花的结构与花序图解、常见科、赏花地点与工具、看图识花小测验。中英双语。",
-      en: "Photo guide to 61 wildflowers of California, gardens and the Canadian Rockies, with ID features, toxicity cautions and bloom calendars from iNaturalist records; look-alike pairs, flower anatomy and inflorescence diagrams, plant families, places, tools and a quiz."
+      zh: "野花识别图鉴网站：65 种加州野花、园艺与外来花卉和加拿大落基山野花，配照片、识别要点、毒性提示和根据 iNaturalist 记录统计的花期日历；易混花卉对比、花的结构与花序图解、常见科、赏花地点与工具、看图识花小测验。中英双语。",
+      en: "Photo guide to 65 wildflowers of California, gardens and the Canadian Rockies, with ID features, toxicity cautions and bloom calendars from iNaturalist records; look-alike pairs, flower anatomy and inflorescence diagrams, plant families, places, tools and a quiz."
     },
     category: "webapps",
     categoryLabel: {
@@ -363,7 +363,7 @@ const REPOSITORIES_DATA = [
     liveUrl: "https://ychenzgithub.github.io/WildflowerID/",
     featured: true,
     featuredRank: 7,
-    image: null,
+    image: "assets/wildflowerid.webp",
     icon: "fa-solid fa-seedling",
     tags: ["Wildflowers", "Botany", "Plant Identification", "Bloom Calendar", "Field Guide"]
   },
@@ -394,6 +394,62 @@ const REPOSITORIES_DATA = [
     image: "assets/classicalmusic.webp",
     icon: "fa-solid fa-music",
     tags: ["Classical Music", "Masterpieces", "Music Appreciation", "YouTube Player", "Bilingual"]
+  },
+  {
+    id: "ScalElNino",
+    name: "ScalElNino",
+    title: {
+      zh: "南加州厄尔尼诺冬季降水统计预测与交互分析",
+      en: "SoCal El Niño Rain Outlook & Interactive Analysis"
+    },
+    desc: {
+      zh: "基于 NOAA 130 年气候观测记录与最新相对海洋尼诺指数 (RONI) 预测，使用伽马回归与浏览器端 20,000 次蒙特卡洛抽样，交互式分析强厄尔尼诺事件对南加州冬春降水的影响。",
+      en: "Interactive statistical analysis of how a strong El Niño shapes winter and spring rainfall across Southern California, built on 130 years of NOAA records, RONI indices, gamma regression, and live browser Monte Carlo simulation."
+    },
+    category: "science",
+    categoryLabel: {
+      zh: "地球与气候科学",
+      en: "Earth & Climate Science"
+    },
+    language: "Python / D3.js",
+    langClass: "python",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/ScalElNino",
+    liveUrl: "https://ychenzgithub.github.io/ScalElNino/",
+    featured: true,
+    featuredRank: 11,
+    image: null,
+    icon: "fa-solid fa-cloud-showers-heavy",
+    tags: ["El Niño", "ENSO / RONI", "Southern California", "Monte Carlo", "D3.js", "NOAA Climate"]
+  },
+  {
+    id: "SpellingBeeLC",
+    name: "SpellingBeeLC",
+    title: {
+      zh: "2027 Spelling Bee 400 词交互拼写训练平台",
+      en: "2027 Spelling Bee Practice Platform (400 Words)"
+    },
+    desc: {
+      zh: "面向 2027 Spelling Bee 竞赛的官方 400 词交互式拼写训练应用。支持标准美式语音播报（单词/慢速/词性释义）、错题本专项复习、3 次重试智能提示与全词表检索。",
+      en: "Interactive practice app for the official 400-word 2027 Spelling Bee competition list, featuring Web Speech pronunciation (normal, slow, definition), missed-word review pool, 3-try hints, and searchable word list."
+    },
+    category: "webapps",
+    categoryLabel: {
+      zh: "交互应用",
+      en: "Live Web App"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/SpellingBeeLC",
+    liveUrl: "https://ychenzgithub.github.io/SpellingBeeLC/",
+    featured: true,
+    featuredRank: 12,
+    image: null,
+    icon: "fa-solid fa-spell-check",
+    tags: ["Spelling Bee", "Vocabulary", "Web Speech TTS", "Interactive Quiz", "Education"]
   },
   {
     id: "100PrisonersProblem",
