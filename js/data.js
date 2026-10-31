@@ -17,8 +17,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "JavaScript",
     langClass: "javascript",
@@ -45,8 +45,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "JavaScript",
     langClass: "javascript",
@@ -74,8 +74,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "TypeScript",
     langClass: "typescript",
@@ -103,8 +103,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "JavaScript",
     langClass: "javascript",
@@ -132,8 +132,8 @@ const REPOSITORIES_DATA = [
     },
     category: "science",
     categoryLabel: {
-      zh: "地球与野火科学",
-      en: "Earth & Fire Science"
+      zh: "地球科学",
+      en: "Earth Science"
     },
     language: "Python",
     langClass: "python",
@@ -142,7 +142,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/GFED5NRT",
     liveUrl: null,
     featured: true,
-    featuredRank: 9,
+    featuredRank: 14,
     image: "assets/gfed5nrt_fires.jpg",
     icon: "fa-solid fa-fire",
     tags: ["Wildfire", "Remote Sensing", "GFED5", "Chemical Emissions", "VIIRS 375m", "Python"]
@@ -160,8 +160,8 @@ const REPOSITORIES_DATA = [
     },
     category: "science",
     categoryLabel: {
-      zh: "地球与野火科学",
-      en: "Earth & Fire Science"
+      zh: "地球科学",
+      en: "Earth Science"
     },
     language: "Python",
     langClass: "python",
@@ -170,7 +170,7 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/FireSpreadIndices",
     liveUrl: null,
     featured: true,
-    featuredRank: 10,
+    featuredRank: 15,
     image: "assets/fire_spread.png",
     icon: "fa-solid fa-fire-flame-curved",
     tags: ["Wildfire Modeling", "GeoPandas", "Rasterio", "Spatial Metrics", "IoU", "Shape Deviation"]
@@ -188,8 +188,8 @@ const REPOSITORIES_DATA = [
     },
     category: "science",
     categoryLabel: {
-      zh: "地球与野火科学",
-      en: "Earth & Fire Science"
+      zh: "地球科学",
+      en: "Earth Science"
     },
     language: "JavaScript / GEE",
     langClass: "javascript",
@@ -296,8 +296,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -324,8 +324,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -352,8 +352,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -380,8 +380,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -408,8 +408,8 @@ const REPOSITORIES_DATA = [
     },
     category: "science",
     categoryLabel: {
-      zh: "地球与气候科学",
-      en: "Earth & Climate Science"
+      zh: "地球科学",
+      en: "Earth Science"
     },
     language: "Python / D3.js",
     langClass: "python",
@@ -418,8 +418,8 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/ScalElNino",
     liveUrl: "https://ychenzgithub.github.io/ScalElNino/",
     featured: true,
-    featuredRank: 11,
-    image: null,
+    featuredRank: 12,
+    image: "assets/scalelnino.webp",
     icon: "fa-solid fa-cloud-showers-heavy",
     tags: ["El Niño", "ENSO / RONI", "Southern California", "Monte Carlo", "D3.js", "NOAA Climate"]
   },
@@ -436,8 +436,8 @@ const REPOSITORIES_DATA = [
     },
     category: "webapps",
     categoryLabel: {
-      zh: "交互应用",
-      en: "Live Web App"
+      zh: "知识生活",
+      en: "Knowledge & Life"
     },
     language: "HTML / JavaScript",
     langClass: "html",
@@ -446,10 +446,94 @@ const REPOSITORIES_DATA = [
     repoUrl: "https://github.com/ychenzgithub/SpellingBeeLC",
     liveUrl: "https://ychenzgithub.github.io/SpellingBeeLC/",
     featured: true,
-    featuredRank: 12,
-    image: null,
+    featuredRank: 11,
+    image: "assets/spellingbee.webp",
     icon: "fa-solid fa-spell-check",
     tags: ["Spelling Bee", "Vocabulary", "Web Speech TTS", "Interactive Quiz", "Education"]
+  },
+  {
+    id: "ScalSeaLevel",
+    name: "ScalSeaLevel",
+    title: {
+      zh: "南加州厄尔尼诺海平面展望与交互分析",
+      en: "SoCal El Niño Sea Level Outlook"
+    },
+    desc: {
+      zh: "2026–27 强厄尔尼诺会让南加州沿海海平面和冬季高潮位升高多少？整合 1906 年以来的全部验潮站记录、美洲太平洋沿岸验潮站、卫星测高与 NOAA 最新厄尔尼诺预报，可调节预报强度与不确定性，并提供 2026–27 冬季王潮预测。",
+      en: "How the 2026–27 El Niño could raise sea level and winter high water on the Southern California coast, from every tide-gauge record since 1906, Pacific-coast gauges, satellite altimetry and NOAA's forecast, with adjustable projections and king-tide outlooks."
+    },
+    category: "science",
+    categoryLabel: {
+      zh: "地球科学",
+      en: "Earth Science"
+    },
+    language: "Python / D3.js",
+    langClass: "python",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/ScalSeaLevel",
+    liveUrl: "https://ychenzgithub.github.io/ScalSeaLevel/",
+    featured: true,
+    featuredRank: 13,
+    image: "assets/scalsealevel.webp",
+    icon: "fa-solid fa-water",
+    tags: ["Sea Level", "El Niño", "Tide Gauges", "King Tides", "D3.js", "NOAA"]
+  },
+  {
+    id: "IgNobel",
+    name: "IgNobel",
+    title: {
+      zh: "搞笑诺贝尔奖全纪实编年史 (1991–2026)",
+      en: "The Ig Nobel Prize Chronicle (1991–2026)"
+    },
+    desc: {
+      zh: "依据官方获奖名单与原始文献编纂的中英双语编年史：完整收录 1991–2026 年共 36 届、357 项获奖研究，每年配一篇风趣纪实长文与一幅原创科学漫画，支持年代筛选、检索、画廊与获奖名录视图。",
+      en: "A bilingual chronicle of all 36 Ig Nobel ceremonies and 357 prizes (1991–2026), compiled from official records and primary literature, with a narrative essay and an original editorial cartoon for every year, plus decade filters, search, gallery and directory views."
+    },
+    category: "webapps",
+    categoryLabel: {
+      zh: "知识生活",
+      en: "Knowledge & Life"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/IgNobel",
+    liveUrl: "https://ychenzgithub.github.io/IgNobel/",
+    featured: true,
+    featuredRank: 9,
+    image: "assets/ignobel.webp",
+    icon: "fa-solid fa-face-laugh-squint",
+    tags: ["Ig Nobel", "Science History", "Editorial Cartoons", "Bilingual", "Chronicle"]
+  },
+  {
+    id: "BirdSticker",
+    name: "BirdSticker",
+    title: {
+      zh: "羽册 · 全球鸟类贴纸馆",
+      en: "Avian Folio · Global Bird Stickers"
+    },
+    desc: {
+      zh: "以图为主的中英双语鸟类欣赏网站，基于花叔开源鸟类贴纸库，收录全球现存 11,064 种鸟类（44 目 · 250 科）的白边贴纸与简介，可按明星类群、栖息生境、地理分布和 IOC 目科分类浏览。",
+      en: "An image-first bilingual gallery of all 11,064 living bird species (44 orders, 250 families) built on Huashu's open bird sticker library, browsable by featured groups, habitats, world realms and IOC taxonomy."
+    },
+    category: "webapps",
+    categoryLabel: {
+      zh: "知识生活",
+      en: "Knowledge & Life"
+    },
+    language: "HTML / JavaScript",
+    langClass: "html",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/BirdSticker",
+    liveUrl: "https://ychenzgithub.github.io/BirdSticker/",
+    featured: true,
+    featuredRank: 10,
+    image: "assets/birdsticker.webp",
+    icon: "fa-solid fa-dove",
+    tags: ["Birds", "11,064 Species", "IOC Taxonomy", "Gallery", "Bilingual"]
   },
   {
     id: "100PrisonersProblem",
