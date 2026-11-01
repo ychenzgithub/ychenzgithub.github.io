@@ -46,10 +46,8 @@
 
       <nav>
         <ul class="nav-menu">
-          <li><a href="#featured" class="nav-link" data-i18n="nav_featured">Knowledge &amp; Life</a></li>
           <li><a href="#science" class="nav-link" data-i18n="nav_science">Earth Science</a></li>
-          <li><a href="#repos" class="nav-link" data-i18n="nav_repos">Repositories</a></li>
-          <li><a href="#about" class="nav-link" data-i18n="nav_about">About Hub</a></li>
+          <li><a href="#featured" class="nav-link" data-i18n="nav_featured">Knowledge &amp; Life</a></li>
         </ul>
       </nav>
 
@@ -84,37 +82,18 @@
       <div class="container">
         <div class="hero-wrapper">
           <div class="hero-content">
-            <div class="hero-pill">
-              <span class="pulse-dot"></span>
-              <span data-i18n="hero_pill">Open Source Hub · Geospatial & Web Tools</span>
-            </div>
-            
             <h1 class="hero-title">
-              <span data-i18n="hero_title_name">Project Hub</span>
               <span class="gradient-text">ychenzgithub</span>
             </h1>
 
-            <div class="hero-subtitle" data-i18n="hero_title_sub">
-              Scientific Computing, Web Apps & Curated Guides
-            </div>
-
-            <div class="hero-affiliation">
-              <i class="fa-solid fa-layer-group"></i>
-              <span data-i18n="hero_affiliation">Open-source repositories & interactive web applications</span>
-            </div>
-
-            <p class="hero-desc" data-i18n="hero_desc">
-              A curated collection of wildfire satellite tools, spread simulation metrics, deep-zoom historical cartography, GeoGuessr meta guides, and algorithms.
-            </p>
-
             <div class="hero-actions">
-              <a href="#repos" class="btn btn-primary">
-                <i class="fa-solid fa-compass"></i>
-                <span data-i18n="btn_explore">Explore Projects</span>
+              <a href="#science" class="btn btn-primary">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span data-i18n="nav_science">Earth Science</span>
               </a>
               <a href="#featured" class="btn btn-secondary">
-                <i class="fa-solid fa-laptop-code"></i>
-                <span data-i18n="btn_live_apps">Live Web Apps</span>
+                <i class="fa-solid fa-compass"></i>
+                <span data-i18n="nav_featured">Knowledge &amp; Life</span>
               </a>
               <a href="https://github.com/ychenzgithub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <i class="fa-brands fa-github"></i>
@@ -133,46 +112,128 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Stats Bar -->
-        <div class="stats-bar">
-          <div class="stat-item">
-            <div class="stat-icon emerald">
-              <i class="fa-solid fa-boxes-stacked"></i>
+    <!-- Earth Science Section -->
+    <section id="science" class="science-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="sci_tag">Earth Science</div>
+          <h2 class="section-title" data-i18n="sci_title">Earth Science</h2>
+          <p class="section-desc" data-i18n="sci_desc">Interactive El Niño outlooks for Southern California rain and sea level, plus open-source toolkits for satellite fire emissions and wildfire spread benchmarks.</p>
+        </div>
+
+        <div class="science-grid">
+          <!-- Science Card: ScalElNino -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
+              <span class="science-badge">NOAA · 130 Years</span>
             </div>
-            <div>
-              <div class="stat-num">21</div>
-              <div class="stat-label" data-i18n="stat_repos">Public Repositories</div>
+            <div class="science-image-box">
+              <img src="assets/scalelnino.webp" alt="El Niño strength stripes since 1872 with rain outlook summary tiles" loading="lazy">
+            </div>
+            <h3 class="science-title" data-i18n="sci3_title">SoCal El Niño Rain Outlook (2026–27)</h3>
+            <p class="science-desc" data-i18n="sci3_desc">
+              How the very strong 2026–27 El Niño could shape winter and spring rain in Southern California, from 130 years of NOAA records and NOAA's October 2026 El Niño forecast.
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f1">Gamma regression on the Relative Oceanic Niño Index</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f2">Adjustable forecast strength and uncertainty</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f3">Skill checked with leave-one-out cross-validation</span></li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://ychenzgithub.github.io/ScalElNino/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="sci3_btn">Open Rain Outlook</span>
+              </a>
+              <a href="https://github.com/ychenzgithub/ScalElNino" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="btn_code">Code</span>
+              </a>
             </div>
           </div>
 
-          <div class="stat-item">
-            <div class="stat-icon cyan">
-              <i class="fa-solid fa-laptop-code"></i>
+          <!-- Science Card: ScalSeaLevel -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-water"></i></div>
+              <span class="science-badge">Tide Gauges since 1906</span>
             </div>
-            <div>
-              <div class="stat-num">14</div>
-              <div class="stat-label" data-i18n="stat_apps">Live Web Apps</div>
+            <div class="science-image-box">
+              <img src="assets/scalsealevel.webp" alt="El Niño strength stripes with winter sea level line and outlook summary tiles" loading="lazy">
+            </div>
+            <h3 class="science-title" data-i18n="sci4_title">SoCal El Niño Sea Level Outlook (2026–27)</h3>
+            <p class="science-desc" data-i18n="sci4_desc">
+              How the 2026–27 El Niño could raise sea level and winter high water on the Southern California coast, from every tide-gauge record since 1906, satellite altimetry and NOAA's forecast.
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f1">Gauges from San Diego to Santa Barbara and Ensenada</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f2">Projections for winter averages and highest water</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f3">King tides for winter 2026–27</span></li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://ychenzgithub.github.io/ScalSeaLevel/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span data-i18n="sci4_btn">Open Sea Level Outlook</span>
+              </a>
+              <a href="https://github.com/ychenzgithub/ScalSeaLevel" target="_blank" rel="noopener noreferrer" class="btn-card-code">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="btn_code">Code</span>
+              </a>
             </div>
           </div>
 
-          <div class="stat-item">
-            <div class="stat-icon blue">
-              <i class="fa-solid fa-code-branch"></i>
+          <!-- Science Card 1: GFED5NRT -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-fire"></i></div>
+              <span class="science-badge">VIIRS 375m & GFED5</span>
             </div>
-            <div>
-              <div class="stat-num">100%</div>
-              <div class="stat-label" data-i18n="stat_open">Open Source Code</div>
+            <div class="science-image-box">
+              <img src="assets/gfed5nrt_fires.jpg" alt="Global map of one week of VIIRS 375 m active fire detections" loading="lazy">
+            </div>
+            <h3 class="science-title" data-i18n="sci1_title">GFED5NRT · Global Near Real-Time Fire Emissions</h3>
+            <p class="science-desc" data-i18n="sci1_desc">
+              Combines VIIRS 375m satellite active fire detections with GFED5 region- and vegetation-specific effective fire area (EFA) and fuel consumption (FC) scalars to automatically generate near real-time global burned area and chemical species emissions on a 0.25° grid.
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f1">Automated daily retrieval of Suomi-NPP / NOAA-20 active fire detections</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f2">Rigorous multi-species emission factor (EF) matrix conversion</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f3">End-to-end cloud sync and global spatiotemporal mapping</span></li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://github.com/ychenzgithub/GFED5NRT" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="sci1_btn">View GFED5NRT Repository</span>
+              </a>
             </div>
           </div>
 
-          <div class="stat-item">
-            <div class="stat-icon amber">
-              <i class="fa-solid fa-calendar-check"></i>
+          <!-- Science Card 2: FireSpreadIndices -->
+          <div class="science-card">
+            <div class="science-icon-header">
+              <div class="science-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <span class="science-badge">GeoPandas & Rasterio</span>
             </div>
-            <div>
-              <div class="stat-num">10+</div>
-              <div class="stat-label" data-i18n="stat_years">Years on GitHub</div>
+            <div class="science-image-box">
+              <img src="assets/fire_spread.png" alt="Fire Spread Schematic">
+            </div>
+            <h3 class="science-title" data-i18n="sci2_title">FireSpreadIndices · Spread Simulation Benchmark</h3>
+            <p class="science-desc" data-i18n="sci2_desc">
+              A Python benchmark library for evaluating the spatial agreement between simulated wildfire spread and observed fire perimeters. Includes overall agreement metrics (IoU, Dice, SDI, ADI, SSIM) and over-/under-prediction decomposition.
+            </p>
+            <ul class="science-features">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f1">Supports both vector polygons and binary/continuous raster grids</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f2">Complete spatial metrics for fire spread shape and area deviation</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f3">Reproducible Jupyter test workflows and visualizations</span></li>
+            </ul>
+            <div class="card-actions" style="margin-top: auto;">
+              <a href="https://github.com/ychenzgithub/FireSpreadIndices" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="sci2_btn">View FireSpreadIndices Source</span>
+              </a>
             </div>
           </div>
         </div>
@@ -547,235 +608,9 @@
       </div>
     </section>
 
-    <!-- Earth Science Section -->
-    <section id="science" class="science-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag" data-i18n="sci_tag">Earth Science</div>
-          <h2 class="section-title" data-i18n="sci_title">Earth Science</h2>
-          <p class="section-desc" data-i18n="sci_desc">Interactive El Niño outlooks for Southern California rain and sea level, plus open-source toolkits for satellite fire emissions and wildfire spread benchmarks.</p>
-        </div>
 
-        <div class="science-grid">
-          <!-- Science Card: ScalElNino -->
-          <div class="science-card">
-            <div class="science-icon-header">
-              <div class="science-icon"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
-              <span class="science-badge">NOAA · 130 Years</span>
-            </div>
-            <div class="science-image-box">
-              <img src="assets/scalelnino.webp" alt="El Niño strength stripes since 1872 with rain outlook summary tiles" loading="lazy">
-            </div>
-            <h3 class="science-title" data-i18n="sci3_title">SoCal El Niño Rain Outlook (2026–27)</h3>
-            <p class="science-desc" data-i18n="sci3_desc">
-              How the very strong 2026–27 El Niño could shape winter and spring rain in Southern California, from 130 years of NOAA records and NOAA's October 2026 El Niño forecast.
-            </p>
-            <ul class="science-features">
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f1">Gamma regression on the Relative Oceanic Niño Index</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f2">Adjustable forecast strength and uncertainty</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci3_f3">Skill checked with leave-one-out cross-validation</span></li>
-            </ul>
-            <div class="card-actions" style="margin-top: auto;">
-              <a href="https://ychenzgithub.github.io/ScalElNino/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                <span data-i18n="sci3_btn">Open Rain Outlook</span>
-              </a>
-              <a href="https://github.com/ychenzgithub/ScalElNino" target="_blank" rel="noopener noreferrer" class="btn-card-code">
-                <i class="fa-brands fa-github"></i>
-                <span data-i18n="btn_code">Code</span>
-              </a>
-            </div>
-          </div>
 
-          <!-- Science Card: ScalSeaLevel -->
-          <div class="science-card">
-            <div class="science-icon-header">
-              <div class="science-icon"><i class="fa-solid fa-water"></i></div>
-              <span class="science-badge">Tide Gauges since 1906</span>
-            </div>
-            <div class="science-image-box">
-              <img src="assets/scalsealevel.webp" alt="El Niño strength stripes with winter sea level line and outlook summary tiles" loading="lazy">
-            </div>
-            <h3 class="science-title" data-i18n="sci4_title">SoCal El Niño Sea Level Outlook (2026–27)</h3>
-            <p class="science-desc" data-i18n="sci4_desc">
-              How the 2026–27 El Niño could raise sea level and winter high water on the Southern California coast, from every tide-gauge record since 1906, satellite altimetry and NOAA's forecast.
-            </p>
-            <ul class="science-features">
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f1">Gauges from San Diego to Santa Barbara and Ensenada</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f2">Projections for winter averages and highest water</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci4_f3">King tides for winter 2026–27</span></li>
-            </ul>
-            <div class="card-actions" style="margin-top: auto;">
-              <a href="https://ychenzgithub.github.io/ScalSeaLevel/" target="_blank" rel="noopener noreferrer" class="btn-card-launch">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                <span data-i18n="sci4_btn">Open Sea Level Outlook</span>
-              </a>
-              <a href="https://github.com/ychenzgithub/ScalSeaLevel" target="_blank" rel="noopener noreferrer" class="btn-card-code">
-                <i class="fa-brands fa-github"></i>
-                <span data-i18n="btn_code">Code</span>
-              </a>
-            </div>
-          </div>
 
-          <!-- Science Card 1: GFED5NRT -->
-          <div class="science-card">
-            <div class="science-icon-header">
-              <div class="science-icon"><i class="fa-solid fa-fire"></i></div>
-              <span class="science-badge">VIIRS 375m & GFED5</span>
-            </div>
-            <div class="science-image-box">
-              <img src="assets/gfed5nrt_fires.jpg" alt="Global map of one week of VIIRS 375 m active fire detections" loading="lazy">
-            </div>
-            <h3 class="science-title" data-i18n="sci1_title">GFED5NRT · Global Near Real-Time Fire Emissions</h3>
-            <p class="science-desc" data-i18n="sci1_desc">
-              Combines VIIRS 375m satellite active fire detections with GFED5 region- and vegetation-specific effective fire area (EFA) and fuel consumption (FC) scalars to automatically generate near real-time global burned area and chemical species emissions on a 0.25° grid.
-            </p>
-            <ul class="science-features">
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f1">Automated daily retrieval of Suomi-NPP / NOAA-20 active fire detections</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f2">Rigorous multi-species emission factor (EF) matrix conversion</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci1_f3">End-to-end cloud sync and global spatiotemporal mapping</span></li>
-            </ul>
-            <div class="card-actions" style="margin-top: auto;">
-              <a href="https://github.com/ychenzgithub/GFED5NRT" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
-                <i class="fa-brands fa-github"></i>
-                <span data-i18n="sci1_btn">View GFED5NRT Repository</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Science Card 2: FireSpreadIndices -->
-          <div class="science-card">
-            <div class="science-icon-header">
-              <div class="science-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-              <span class="science-badge">GeoPandas & Rasterio</span>
-            </div>
-            <div class="science-image-box">
-              <img src="assets/fire_spread.png" alt="Fire Spread Schematic">
-            </div>
-            <h3 class="science-title" data-i18n="sci2_title">FireSpreadIndices · Spread Simulation Benchmark</h3>
-            <p class="science-desc" data-i18n="sci2_desc">
-              A Python benchmark library for evaluating the spatial agreement between simulated wildfire spread and observed fire perimeters. Includes overall agreement metrics (IoU, Dice, SDI, ADI, SSIM) and over-/under-prediction decomposition.
-            </p>
-            <ul class="science-features">
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f1">Supports both vector polygons and binary/continuous raster grids</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f2">Complete spatial metrics for fire spread shape and area deviation</span></li>
-              <li><i class="fa-solid fa-check"></i> <span data-i18n="sci2_f3">Reproducible Jupyter test workflows and visualizations</span></li>
-            </ul>
-            <div class="card-actions" style="margin-top: auto;">
-              <a href="https://github.com/ychenzgithub/FireSpreadIndices" target="_blank" rel="noopener noreferrer" class="btn-card-code" style="width: 100%;">
-                <i class="fa-brands fa-github"></i>
-                <span data-i18n="sci2_btn">View FireSpreadIndices Source</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Complete Repository Library Explorer -->
-    <section id="repos" class="repos-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag" data-i18n="all_tag">Project Library</div>
-          <h2 class="section-title" data-i18n="all_title">All Public Repositories (21)</h2>
-          <p class="section-desc" data-i18n="all_desc">Explore all scientific packages, interactive web tools, curated knowledge bases, and algorithms.</p>
-        </div>
-
-        <!-- Filter & Search Toolbar -->
-        <div class="repo-toolbar">
-          <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search-input" class="search-input" placeholder="Search repository name, language, tag, or keywords..." data-i18n-placeholder="search_placeholder">
-          </div>
-
-          <div class="toolbar-filters">
-            <div class="category-tabs">
-              <button class="filter-tab active" data-category="all" data-i18n="tab_all">All Projects (21)</button>
-              <button class="filter-tab" data-category="webapps" data-i18n="tab_webapps">🧭 Knowledge &amp; Life (11)</button>
-              <button class="filter-tab" data-category="science" data-i18n="tab_science">🌍 Earth Science (5)</button>
-              <button class="filter-tab" data-category="knowledge" data-i18n="tab_knowledge">📚 Curated Lists (3)</button>
-              <button class="filter-tab" data-category="algorithms" data-i18n="tab_algorithms">🧮 Math & Logic (1)</button>
-            </div>
-
-            <div class="sort-wrapper">
-              <label for="sort-select"><i class="fa-solid fa-arrow-down-short-wide"></i></label>
-              <select id="sort-select" class="sort-select">
-                <option value="featured" data-i18n="sort_featured">Featured First</option>
-                <option value="stars" data-i18n="sort_stars">Most Stars</option>
-                <option value="name" data-i18n="sort_name">Name (A-Z)</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div class="repos-count-bar">
-          <span id="repo-count">Showing 21 of 21 repositories</span>
-          <span style="font-size: 0.8rem; opacity: 0.7;"><i class="fa-brands fa-github"></i> Synchronized with GitHub</span>
-        </div>
-
-        <!-- Grid Container for Repositories -->
-        <div id="repos-grid" class="repos-grid">
-          <!-- Dynamically populated by js/app.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- About Repositories & Tech Stack -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag" data-i18n="about_tag">About This Hub</div>
-          <h2 class="section-title" data-i18n="about_title">About the Repositories & Tech Stack</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text">
-            <p data-i18n="about_p1">
-              This hub collects public open-source repositories maintained under ychenzgithub, spanning satellite remote sensing, wildfire spread metrics, high-res web cartography, and discrete algorithms.
-            </p>
-            <p data-i18n="about_p2">
-              All interactive web apps are hosted on GitHub Pages or cloud platforms with completely open-source code and data.
-            </p>
-            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-              <a href="https://github.com/ychenzgithub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub Profile</span>
-              </a>
-              <a href="#repos" class="btn btn-secondary">
-                <i class="fa-solid fa-layer-group"></i>
-                <span data-i18n="about_btn_all">View All 21 Projects</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="about-highlights">
-            <div class="highlight-box">
-              <div class="highlight-icon"><i class="fa-solid fa-fire"></i></div>
-              <div class="highlight-content">
-                <h4 data-i18n="about_card1_title">Fire Emissions & Remote Sensing</h4>
-                <p data-i18n="about_card1_desc">Near real-time burned area, emissions estimation pipelines, and spread simulation benchmark metrics.</p>
-              </div>
-            </div>
-
-            <div class="highlight-box">
-              <div class="highlight-icon"><i class="fa-solid fa-satellite"></i></div>
-              <div class="highlight-content">
-                <h4 data-i18n="about_card2_title">Geospatial Big Data & Computing</h4>
-                <p data-i18n="about_card2_desc">Google Earth Engine (GEE) architecture, spatiotemporal raster operations, and remote sensing pipelines.</p>
-              </div>
-            </div>
-
-            <div class="highlight-box">
-              <div class="highlight-icon"><i class="fa-solid fa-compass"></i></div>
-              <div class="highlight-content">
-                <h4 data-i18n="about_card3_title">Interactive Maps & Web Tools</h4>
-                <p data-i18n="about_card3_desc">Deep-zoom historical cartography, GeoGuessr meta hub, discovery maps, and cryptography tools.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -789,8 +624,8 @@
 
         <ul class="footer-links">
           <li><a href="https://github.com/ychenzgithub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
-          <li><a href="#featured"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="nav_featured">Knowledge &amp; Life</span></a></li>
-          <li><a href="#repos"><i class="fa-solid fa-boxes-stacked"></i> <span data-i18n="footer_repos">Project Library</span></a></li>
+          <li><a href="#science"><i class="fa-solid fa-earth-americas"></i> <span data-i18n="nav_science">Earth Science</span></a></li>
+          <li><a href="#featured"><i class="fa-solid fa-compass"></i> <span data-i18n="nav_featured">Knowledge &amp; Life</span></a></li>
           <li><a href="#hero"><i class="fa-solid fa-arrow-up"></i> <span data-i18n="footer_top">Back to Top</span></a></li>
         </ul>
       </div>
