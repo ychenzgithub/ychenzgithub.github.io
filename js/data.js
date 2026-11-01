@@ -563,6 +563,34 @@ const REPOSITORIES_DATA = [
     tags: ["Probability", "Monte Carlo", "Permutation Cycles", "Discrete Math", "Python"]
   },
   {
+    id: "WorldLandmarks",
+    name: "WorldLandmarks",
+    title: {
+      zh: "世界著名建筑与地标画廊 (World Landmarks 3D)",
+      en: "World Landmarks 3D Gallery & Architectural Explorer"
+    },
+    desc: {
+      zh: "汇集人类文明 4,500 年 42 座世界著名地标建筑：可交互 3D 结构几何模型、建筑力学解构、历史背景、世界地图分布与中英双语语音导赏。",
+      en: "Explore 42 world-famous architectural wonders spanning 4,500 years of civilization: interactive 3D procedural models, engineering deconstruction, world map, and bilingual audio guides."
+    },
+    category: "knowledge",
+    categoryLabel: {
+      zh: "知识生活",
+      en: "Knowledge & Life"
+    },
+    language: "JavaScript / Three.js",
+    langClass: "javascript",
+    stars: 0,
+    forks: 0,
+    repoUrl: "https://github.com/ychenzgithub/WorldLandmarks",
+    liveUrl: "https://ychenzgithub.github.io/WorldLandmarks/",
+    featured: true,
+    featuredRank: 12,
+    image: "assets/worldlandmarks.webp",
+    icon: "fa-solid fa-landmark",
+    tags: ["Architecture", "Three.js", "3D Geometry", "World Heritage", "Leaflet", "Bilingual"]
+  },
+  {
     id: "ychenzgithub.github.io",
     name: "ychenzgithub.github.io",
     title: {
